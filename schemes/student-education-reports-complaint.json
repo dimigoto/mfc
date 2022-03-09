@@ -1,0 +1,50 @@
+{
+    "id": "student-education-reports-complaint",
+    "guidRequestType": "c6e3c39a-72fb-11ea-97fc-00155d203945",
+    "structure": [
+        {
+            "class": "include",
+            "src": "_full_name"
+        },
+        {
+            "class": "include",
+            "src": "_education_info"
+        },
+        {
+            "class": "include",
+            "src": "_phone"
+        },
+        {
+            "class": "field",
+            "type": "hidden",
+            "name": "enquiryType",
+            "format": "string",
+            "value": "COMPLAINT",
+            "read": "none",
+            "isHidden": true,
+            "required": true
+        },
+        {
+            "class": "file",
+            "type": "file",
+            "name": "file",
+            "format": "file",
+            "read": "file",
+            "label": "FILE",
+            "required": false
+        },
+        {
+            "class": "field",
+            "type": "textarea",
+            "name": "message",
+            "format": "string",
+            "read": "string",
+            "label": "MESSAGE",
+            "required": true
+        },
+        {
+            "class": "include",
+            "src": "_obtaining"
+        }
+    ]
+}

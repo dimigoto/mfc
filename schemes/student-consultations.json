@@ -1,0 +1,44 @@
+{
+    "id": "student-consultations",
+    "guidRequestType": "d5a2ec5e-7d77-11eb-a200-00155d203652",
+    "structure": [
+        {
+            "class": "include",
+            "src": "_full_name"
+        },
+        {
+            "class": "include",
+            "src": "_education_info"
+        },
+        {
+            "class": "include",
+            "src": "_accommodation"
+        },
+        {
+            "class": "include",
+            "src": "_phone"
+        },
+        {
+            "class": "file",
+            "type": "file",
+            "name": "file",
+            "format": "file",
+            "read": "file",
+            "label": "FILE",
+            "required": false
+        },
+        {
+            "class": "field",
+            "type": "textarea",
+            "name": "message",
+            "format": "string",
+            "read": "string",
+            "label": "MESSAGE",
+            "required": true
+        },
+        {
+            "class": "include",
+            "src": "_obtaining_consultations"
+        }
+    ]
+}

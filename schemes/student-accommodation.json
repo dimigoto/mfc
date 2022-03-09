@@ -1,0 +1,23 @@
+{
+    "id": "student-accommodation",
+    "guidRequestType": "91e20576-09fe-11eb-a48b-00155d203945",
+    "structure": [
+        {
+            "class": "include",
+            "src": "_full_name"
+        },
+        {
+            "class": "include",
+            "src": "_education_info"
+        },
+        {
+            "class": "field",
+            "type": "textarea",
+            "name": "message",
+            "format": "string",
+            "read": "string",
+            "label": "MESSAGE",
+            "required": true
+        }
+    ]
+}

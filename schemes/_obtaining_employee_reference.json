@@ -1,0 +1,88 @@
+[
+    {
+        "class": "field",
+        "type": "select",
+        "name": "obtaining",
+        "format": "string",
+        "read": "items",
+        "label": "OBTAINING",
+        "items": [
+            "DEFAULT",
+            "PERSONALLY",
+            "MAIL"
+        ],
+        "required": true,
+        "maxWidth": [
+            {
+                "point": "lg",
+                "size": 4
+            },
+            {
+                "point": "md",
+                "size": 6
+            }
+        ]
+    },
+    {
+        "class": "fieldset",
+        "name": "obtainingPersonally",
+        "enabledRules": {
+            "from": "obtaining",
+            "value": "PERSONALLY"
+        },
+        "children": [
+            {
+                "class": "field",
+                "type": "datetime",
+                "name": "visitTime",
+                "format": "datetime",
+                "read": "datetime",
+                "label": "OBTAINING_PREFERRED_DATE",
+                "value": "09:00",
+                "min_hour": 9,
+                "max_hour": 18,
+                "only_workdays": 1,
+                "min_workdays_offset": 5,
+                "required": true,
+                "maxWidth": [
+                    {
+                        "point": "lg",
+                        "size": 3
+                    },
+                    {
+                        "point": "md",
+                        "size": 4
+                    },
+                    {
+                        "point": "sm",
+                        "size": 6
+                    },
+                    {
+                        "point": "xs",
+                        "size": 6
+                    }
+                ],
+                "ghost": true
+            }
+        ]
+    },
+    {
+        "class": "fieldset",
+        "name": "obtainingMail",
+        "enabledRules": {
+            "from": "obtaining",
+            "value": "MAIL"
+        },
+        "children": [
+            {
+                "class": "field",
+                "type": "address",
+                "name": "address",
+                "format": "string",
+                "read": "string",
+                "label": "OBTAINING_ADDRESS",
+                "required": true
+            }
+        ]
+    }
+]

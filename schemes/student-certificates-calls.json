@@ -1,0 +1,25 @@
+{
+    "id": "student-certificates-calls",
+    "guidRequestType": "96ede99a-c660-11ea-a48b-00155d203945",
+    "files": [
+        {
+            "guid": "3b0121f3-9bc1-4ea6-81c7-5fdce2db3fa8",
+            "label": "BLANK_DEFAULT",
+            "file": "zayavlenie-spravka-vyzov-20220209.pdf"
+        }
+    ],
+    "structure": [
+        {
+            "class": "include",
+            "src": "_application_download_fields"
+        },
+        {
+            "class": "include",
+            "src": "_application_download_file"
+        },
+        {
+            "class": "include",
+            "src": "_obtaining"
+        }
+    ]
+}

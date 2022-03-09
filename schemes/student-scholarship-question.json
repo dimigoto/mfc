@@ -1,0 +1,36 @@
+{
+    "deprecated": true,
+    "id": "student-scholarship-question",
+    "guidRequestType": "4e71c717-2570-11eb-a1ff-00155d203652",
+    "structure": [
+        {
+            "class": "include",
+            "src": "_full_name"
+        },
+        {
+            "class": "include",
+            "src": "_birthday"
+        },
+        {
+            "class": "include",
+            "src": "_passport"
+        },
+        {
+            "class": "include",
+            "src": "_education_info"
+        },
+        {
+            "class": "include",
+            "src": "_phone"
+        },
+        {
+            "class": "field",
+            "type": "textarea",
+            "name": "message",
+            "format": "string",
+            "read": "string",
+            "label": "MESSAGE",
+            "required": true
+        }
+    ]
+}

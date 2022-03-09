@@ -1,0 +1,191 @@
+{
+    "id": "employee-reference-letter",
+    "guidRequestType": "71df0b2b-362c-11eb-a200-00155d203652",
+    "rateLimit" : 0,
+    "structure": [
+        {
+            "class": "include",
+            "src": "_full_name"
+        },
+        {
+            "class": "include",
+            "src": "_employee_department"
+        },
+        {
+            "class": "include",
+            "src": "_corporateEmail"
+        },
+        {
+            "class": "include",
+            "src": "_phone"
+        },
+        {
+            "class": "field",
+            "type": "select",
+            "name": "documentCategory",
+            "format": "string",
+            "read": "items",
+            "label": "REFERENCE_LETTER_TYPE",
+            "items": [
+                "DEFAULT",
+                "NDFL2",
+                "SUBSIDIES3",
+                "SUBSIDIES6",
+                "SUBSIDIES_YEAR",
+                "VISA",
+                "SICK_LEAVE",
+                "ONE_TIME_ALLOWANCE",
+                "CHILDCARE",
+                "LEAVE",
+                "COMBINATION",
+                "AVERAGY_SALARY",
+                "EXPERIENCE_SHORT",
+                "EXPERIENCE_FULL",
+                "PLACE_OF_WORK",
+                "FAR_EST_WORK",
+                "ACCOMMODATION_RUSSKIY",
+                "ACCOMMODATION_CITY",
+                "PREFERENTIAL",
+                "EXPERIENCE_ST3",
+                "STDR",
+                "EMPLOYMENT",
+                "CREDIT",
+                "BAILIFF_SALARY_ACCOUNT",
+                "BAILIFF_WRITS_OF_EXECUTION_AMOUNT"
+            ],
+            "required": true,
+            "maxWidth": [
+                {
+                    "point": "lg",
+                    "size": 6
+                },
+                {
+                    "point": "md",
+                    "size": 8
+                }
+            ]
+        },
+        {
+            "class": "fieldset",
+            "name": "childInfo",
+            "enabledRules": {
+                "from": "documentCategory",
+                "value": "MATERNITY|CHILDCARE"
+            },
+            "children": [
+                {
+                    "class": "field",
+                    "type": "text",
+                    "name": "childName",
+                    "format": "string",
+                    "read": "string",
+                    "label": "REFERENCE_LETTER_CHILD_NAME",
+                    "required": true
+                },
+                {
+                    "class": "field",
+                    "type": "date",
+                    "name": "childBirthDate",
+                    "format": "date",
+                    "read": "date",
+                    "label": "REFERENCE_LETTER_CHILD_BIRTH_DATE",
+                    "required": true,
+                    "maxWidth": [
+                        {
+                            "point": "lg",
+                            "size": 3
+                        },
+                        {
+                            "point": "md",
+                            "size": 4
+                        },
+                        {
+                            "point": "sm",
+                            "size": 6
+                        },
+                        {
+                            "point": "xs",
+                            "size": 6
+                        }
+                    ],
+                    "clientOptions": {
+                        "endDate": "0d"
+                    }
+                }
+            ]
+        },
+        {
+            "class": "fieldset",
+            "name": "documentPeriod",
+            "enabledRules": {
+                "from": "documentCategory",
+                "value": "NDFL2|SUBSIDIES3|SUBSIDIES6|VISA|SICK_LEAVE|MATERNITY|CHILDCARE|AVERAGY_SALARY|PREFERENTIAL|EXPERIENCE_ST3|STDR|EMPLOYMENT|CREDIT"
+            },
+            "children": [
+                {
+                    "class": "field",
+                    "type": "date",
+                    "name": "dateFrom",
+                    "format": "date",
+                    "read": "date",
+                    "label": "REFERENCE_LETTER_PERIOD_FROM",
+                    "required": true,
+                    "maxWidth": [
+                        {
+                            "point": "lg",
+                            "size": 3
+                        },
+                        {
+                            "point": "md",
+                            "size": 4
+                        },
+                        {
+                            "point": "sm",
+                            "size": 6
+                        },
+                        {
+                            "point": "xs",
+                            "size": 6
+                        }
+                    ]
+                },
+                {
+                    "class": "field",
+                    "type": "date",
+                    "name": "dateTo",
+                    "format": "date",
+                    "read": "date",
+                    "label": "REFERENCE_LETTER_PERIOD_TO",
+                    "required": true,
+                    "maxWidth": [
+                        {
+                            "point": "lg",
+                            "size": 3
+                        },
+                        {
+                            "point": "md",
+                            "size": 4
+                        },
+                        {
+                            "point": "sm",
+                            "size": 6
+                        },
+                        {
+                            "point": "xs",
+                            "size": 6
+                        }
+                    ]
+                }
+            ],
+            "label": "REFERENCE_LETTER_PERIOD"
+        },
+        {
+            "class": "include",
+            "src": "_comment"
+        },
+        {
+            "class": "include",
+            "src": "_obtaining_employee_reference"
+        }
+    ]
+}

@@ -1,0 +1,35 @@
+{
+    "id": "student-personal-data-change",
+    "guidRequestType": "0dad16da-c65f-11ea-a48b-00155d203945",
+    "files": [
+        {
+            "guid": "41ace680-b3ec-4aac-ad9d-8d2f3f6ab065",
+            "label": "BLANK_PERSONAL_DATA_DEFAULT",
+            "file": "zayavlenie-personalnye-dannye-20211206.pdf"
+        },
+        {
+            "guid": "e79084a6-bfd4-4541-92b3-ca706799c90c",
+            "label": "BLANK_PERSONAL_DATA_NAME",
+            "file": "zayavlenie-personalnye-dannye-fio-20211125.pdf"
+        },
+        {
+            "guid": "48c3e3dc-f8ff-455d-a579-0dcaa4a0377a",
+            "label": "BLANK_PERSONAL_DATA_CITIZENSHIP",
+            "file": "zayavlenie-personalnye-dannye-grazhdanstvo-20211206.pdf"
+        }
+    ],
+    "structure": [
+        {
+            "class": "include",
+            "src": "_application_download_fields"
+        },
+        {
+            "class": "include",
+            "src": "_application_download_file"
+        },
+        {
+            "class": "include",
+            "src": "_application_download_file_multiple_required"
+        }
+    ]
+}

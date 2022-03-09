@@ -1,0 +1,320 @@
+{
+    "id": "car-pass",
+    "guidRequestType": "36b57915-25b8-11eb-a1ff-00155d203652",
+    "rateLimit" : 0,
+    "structure": [
+        {
+            "class": "field",
+            "type": "fullName",
+            "name": "fullName",
+            "format": "string",
+            "read": "string",
+            "label": "TEMP_PASS_ISSUER_FULL_NAME",
+            "readonly": true,
+            "required": true
+        },
+        {
+            "class": "include",
+            "src": "_corporateEmail"
+        },
+        {
+            "class": "include",
+            "src": "_phone"
+        },
+        {
+            "class": "field",
+            "type": "text",
+            "name": "carModel",
+            "format": "string",
+            "read": "string",
+            "label": "CAR_PASS_MODEL",
+            "required": true,
+            "maxWidth": [
+                {
+                    "point": "lg",
+                    "size": 6
+                },
+                {
+                    "point": "md",
+                    "size": 8
+                }
+            ]
+        },
+        {
+            "class": "field",
+            "type": "text",
+            "name": "carNumber",
+            "format": "string",
+            "read": "string",
+            "label": "CAR_PASS_NUMBER",
+            "required": true,
+            "maxWidth": [
+                {
+                    "point": "lg",
+                    "size": 3
+                },
+                {
+                    "point": "sm",
+                    "size": 6
+                }
+            ]
+        },
+        {
+            "class": "field",
+            "type": "text",
+            "name": "carCertificateNumber",
+            "format": "string",
+            "read": "string",
+            "label": "CAR_PASS_CERTIFICATE_NUMBER",
+            "required": true,
+            "maxWidth": [
+                {
+                    "point": "lg",
+                    "size": 6
+                },
+                {
+                    "point": "md",
+                    "size": 8
+                }
+            ]
+        },
+        {
+            "class": "file",
+            "type": "file",
+            "name": "carCertificateFile",
+            "format": "file",
+            "read": "file",
+            "label": "CAR_PASS_CERTIFICATE_FILE",
+            "hint": "CAR_PASS_FILE_HINT",
+            "multiple": true,
+            "required": true
+        },
+        {
+            "class": "field",
+            "type": "text",
+            "name": "licenseNumber",
+            "format": "string",
+            "read": "string",
+            "label": "CAR_PASS_LICENSE_NUMBER",
+            "required": true,
+            "maxWidth": [
+                {
+                    "point": "lg",
+                    "size": 6
+                },
+                {
+                    "point": "md",
+                    "size": 8
+                }
+            ]
+        },
+        {
+            "class": "file",
+            "type": "file",
+            "name": "licenseFile",
+            "format": "file",
+            "read": "file",
+            "label": "CAR_PASS_LICENSE_FILE",
+            "hint": "CAR_PASS_FILE_HINT",
+            "multiple": true,
+            "required": true
+        },
+        {
+            "class": "field",
+            "type": "text",
+            "name": "insuranceNumber",
+            "format": "string",
+            "read": "string",
+            "label": "CAR_PASS_INSURANCE_NUMBER",
+            "required": true,
+            "maxWidth": [
+                {
+                    "point": "lg",
+                    "size": 6
+                },
+                {
+                    "point": "md",
+                    "size": 8
+                }
+            ]
+        },
+        {
+            "class": "file",
+            "type": "file",
+            "name": "insuranceFile",
+            "format": "file",
+            "read": "file",
+            "label": "CAR_PASS_INSURANCE_FILE",
+            "multiple": true,
+            "required": true
+        },
+        {
+            "class": "field",
+            "type": "carPassCategory",
+            "name": "passCategory",
+            "format": "string",
+            "read": "items",
+            "label": "CAR_PASS_CATEGORY",
+            "required": true,
+            "maxWidth": [
+                {
+                    "point": "lg",
+                    "size": 6
+                },
+                {
+                    "point": "md",
+                    "size": 8
+                }
+            ]
+        },
+        {
+            "class": "fieldset",
+            "name": "carPassCategory",
+            "enabledRules": {
+                "from": "passCategory"
+            },
+            "children": [
+                {
+                    "class": "field",
+                    "type": "parking",
+                    "name": "parking",
+                    "format": "multiselect",
+                    "read": "string",
+                    "label": "CAR_PASS_PARKING",
+                    "required": true
+                }
+            ]
+        },
+        {
+            "class": "fieldset",
+            "name": "carPassCategoryPeriod",
+            "enabledRules": {
+                "from": "passCategory",
+                "value": "PERIOD"
+            },
+            "children": [
+                {
+                    "class": "field",
+                    "type": "date",
+                    "name": "carPassCategoryPeriodEnd",
+                    "format": "date",
+                    "read": "date",
+                    "label": "CAR_PASS_CATEGORY_PERIOD_END",
+                    "required": true,
+                    "maxWidth": [
+                        {
+                            "point": "lg",
+                            "size": 2
+                        },
+                        {
+                            "point": "md",
+                            "size": 3
+                        },
+                        {
+                            "point": "sm",
+                            "size": 4
+                        },
+                        {
+                            "point": "xs",
+                            "size": 6
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "class": "field",
+            "type": "radio",
+            "name": "isReplacement",
+            "format": "string",
+            "read": "items",
+            "label": "CAR_PASS_IS_REPLACEMENT",
+            "items": [
+                "NO",
+                "YES"
+            ],
+            "required": true
+        },
+        {
+            "class": "fieldset",
+            "name": "replacement",
+            "enabledRules": {
+                "from": "isReplacement",
+                "value": "YES"
+            },
+            "children": [
+                {
+                    "class": "info",
+                    "type": "alert-info",
+                    "text": "CAR_PASS_REPLACEMENT_ALERT"
+                },
+                {
+                    "class": "field",
+                    "type": "text",
+                    "name": "carPassNumberOld",
+                    "format": "string",
+                    "read": "string",
+                    "label": "CAR_PASS_PASS_NUMBER_OLD",
+                    "required": true,
+                    "maxWidth": [
+                        {
+                            "point": "lg",
+                            "size": 6
+                        },
+                        {
+                            "point": "md",
+                            "size": 8
+                        }
+                    ]
+                },
+                {
+                    "class": "field",
+                    "type": "text",
+                    "name": "carModelOld",
+                    "format": "string",
+                    "read": "string",
+                    "label": "CAR_PASS_MODEL_OLD",
+                    "required": true,
+                    "maxWidth": [
+                        {
+                            "point": "lg",
+                            "size": 6
+                        },
+                        {
+                            "point": "md",
+                            "size": 8
+                        }
+                    ]
+                },
+                {
+                    "class": "field",
+                    "type": "text",
+                    "name": "carNumberOld",
+                    "format": "string",
+                    "read": "string",
+                    "label": "CAR_PASS_NUMBER_OLD",
+                    "required": true,
+                    "maxWidth": [
+                        {
+                            "point": "lg",
+                            "size": 3
+                        },
+                        {
+                            "point": "sm",
+                            "size": 6
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "class": "field",
+            "type": "accept",
+            "name": "personalDataAccept",
+            "format": "string",
+            "read": "none",
+            "label": "CAR_PASS_PERSONAL_DATA_ACCEPT",
+            "required": true
+        }
+    ]
+}

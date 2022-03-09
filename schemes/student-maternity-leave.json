@@ -1,0 +1,30 @@
+{
+    "id": "student-maternity-leave",
+    "guidRequestType": "00fe9b48-c660-11ea-a48b-00155d203945",
+    "files": [
+        {
+            "guid": "dfb5a471-5426-472c-b725-4b8cade8b2ae",
+            "label": "BLANK_MATERNITY_DEFAULT",
+            "file": "zayavlenie-otpusk-po-beremennosti-i-rodam-20211206.pdf"
+        },
+        {
+            "guid": "3753fb46-6b0d-4ded-a04e-230b73067f63",
+            "label": "BLANK_MATERNITY_ALLOWANCE",
+            "file": "zayavlenie-vyplata-posobiya-po-beremennosti-20211021.pdf"
+        }
+    ],
+    "structure": [
+        {
+            "class": "include",
+            "src": "_application_download_fields"
+        },
+        {
+            "class": "include",
+            "src": "_application_download_file"
+        },
+        {
+            "class": "include",
+            "src": "_application_download_file_multiple"
+        }
+    ]
+}

@@ -1,0 +1,1360 @@
+[
+    {
+        "parent": null,
+        "class": "category",
+        "id": "services"
+    },
+    {
+        "parent": "services",
+        "class": "category",
+        "id": "services-student-office",
+        "roles": ["student"]
+    },
+    {
+        "parent": "services-student-office",
+        "class": "category",
+        "id": "services-student-documents"
+    },
+    {
+        "parent": "services-student-documents",
+        "class": "enquiry",
+        "id": "student-study-period",
+        "roles": ["student"]
+    },
+    {
+        "parent": "services-student-documents",
+        "class": "enquiry",
+        "id": "student-reference-letter-military",
+        "roles": ["student"]
+    },
+    {
+        "parent": "services-student-documents",
+        "class": "enquiry",
+        "id": "student-reference-letter-status",
+        "roles": ["student"]
+    },
+    {
+        "parent": "services-student-documents",
+        "class": "enquiry",
+        "id": "student-certificates-calls",
+        "roles": ["student"]
+    },
+    {
+        "parent": "services-student-documents",
+        "class": "enquiry",
+        "id": "student-subsidies",
+        "roles": ["student"]
+    },
+    {
+        "parent": "services-student-documents",
+        "class": "enquiry",
+        "id": "student-copies-of-lost",
+        "roles": ["student"]
+    },
+    {
+        "parent": "services-student-documents",
+        "class": "enquiry",
+        "id": "student-characteristic",
+        "roles": ["student"]
+    },
+    {
+        "parent": "services-student-documents",
+        "class": "enquiry",
+        "id": "student-document-issuance",
+        "roles": ["student"]
+    },
+    {
+        "parent": "services-student-documents",
+        "class": "enquiry",
+        "id": "student-document-submission",
+        "roles": ["student"]
+    },
+    {
+        "parent": "services-student-office",
+        "class": "category",
+        "id": "services-intermediate-attestation"
+    },
+    {
+        "parent": "services-intermediate-attestation",
+        "class": "enquiry",
+        "id": "student-retake",
+        "roles": ["student"]
+    },
+    {
+        "parent": "services-intermediate-attestation",
+        "class": "enquiry",
+        "id": "student-exam-retake",
+        "roles": ["student"]
+    },
+    {
+        "parent": "services-intermediate-attestation",
+        "class": "enquiry",
+        "id": "student-individual-terms-of-intermediate-certification",
+        "roles": ["student"]
+    },
+    {
+        "parent": "services-intermediate-attestation",
+        "class": "enquiry",
+        "id": "student-enquiries-commissions-one-day",
+        "roles": ["student"],
+        "archive": true
+    },
+    {
+        "parent": "services-student-office",
+        "class": "category",
+        "id": "services-vacation"
+    },
+    {
+        "parent": "services-vacation",
+        "class": "enquiry",
+        "id": "student-child-care-leave",
+        "roles": ["student"]
+    },
+    {
+        "parent": "services-vacation",
+        "class": "enquiry",
+        "id": "student-maternity-leave",
+        "roles": ["student"]
+    },
+    {
+        "parent": "services-vacation",
+        "class": "enquiry",
+        "id": "student-academic-leave",
+        "roles": ["student"]
+    },
+    {
+        "parent": "services-vacation",
+        "class": "enquiry",
+        "id": "student-academic-leave-end",
+        "roles": ["student"]
+    },
+    {
+        "parent": "services-student-office",
+        "class": "category",
+        "id": "services-educational-transfers"
+    },
+    {
+        "parent": "services-student-office",
+        "class": "category",
+        "id": "services-student-contacting-dispute-resolution-commission"
+    },
+    {
+        "parent": "services-educational-transfers",
+        "class": "enquiry",
+        "id": "student-individual-curriculum-transfer",
+        "roles": ["student"]
+    },
+    {
+        "parent": "services-educational-transfers",
+        "class": "enquiry",
+        "id": "student-change-educational-program",
+        "roles": ["student"]
+    },
+    {
+        "parent": "services-student-office",
+        "class": "enquiry",
+        "id": "student-personal-data-change",
+        "roles": ["student"]
+    },
+    {
+        "parent": "services-student-office",
+        "class": "enquiry",
+        "id": "student-government-sponsorship",
+        "roles": ["student"]
+    },
+    {
+        "parent": "services",
+        "class": "category",
+        "id": "services-campus",
+        "roles": ["employee","student","pps"]
+    },
+    {
+        "parent": "services-campus",
+        "class": "enquiry",
+        "id": "car-pass",
+        "roles": ["employee", "student"]
+    },
+    {
+        "parent": "services-campus",
+        "class": "enquiry",
+        "id": "temp-pass-issue",
+        "roles": ["employee"]
+    },
+    {
+        "parent": "services-campus",
+        "class": "link",
+        "id": "departure-notification",
+        "url": "/departure-notification",
+        "roles": ["student", "employee"]
+    },
+    {
+        "parent": "services-campus",
+        "class": "link",
+        "id": "room-workplace-service",
+        "url": "/page/service/room-workplace-service",
+        "roles": ["student", "employee"]
+    },
+    {
+        "parent": "services-campus",
+        "class": "link",
+        "id": "employee-room-workplace-service",
+        "url": "/page/service/room-workplace-service",
+        "roles": ["employee"]
+    },
+    {
+        "parent": "services",
+        "class": "category",
+        "id": "services-hr-and-accounting",
+        "roles": ["employee","pps"]
+    },
+    {
+        "parent": "services-hr-and-accounting",
+        "class": "enquiry",
+        "id": "employee-document-copy",
+        "roles": ["employee"]
+    },
+    {
+        "parent": "services-hr-and-accounting",
+        "class": "enquiry",
+        "id": "employee-reference-letter",
+        "roles": ["employee"]
+    },
+    {
+        "parent": "services-hr-and-accounting",
+        "class": "enquiry",
+        "id": "employee-snils-update",
+        "roles": ["employee"]
+    },
+    {
+        "parent": "services",
+        "class": "link",
+        "id": "bank",
+        "url": "/bank",
+        "roles": ["freshman"]
+    },
+    {
+        "parent": "services",
+        "class": "category",
+        "id": "services-schedule",
+        "roles": ["pps"]
+    },
+    {
+        "parent": "services-schedule",
+        "class": "enquiry",
+        "id": "pps-teacher-rescheduling",
+        "roles": ["pps"]
+    },
+    {
+        "parent": "services-schedule",
+        "class": "enquiry",
+        "id": "pps-department-rescheduling",
+        "roles": ["pps"]
+    },
+    {
+        "parent": "services",
+        "class": "category",
+        "id": "student-applications",
+        "roles": ["student"]
+    },
+    {
+        "parent": "student-applications",
+        "class": "enquiry",
+        "id": "student-application-vacation",
+        "roles": ["student"]
+    },
+    {
+        "parent": "student-applications",
+        "class": "enquiry",
+        "id": "student-application-foreigner",
+        "roles": ["student"]
+    },
+
+
+    {
+        "parent": null,
+        "class": "category",
+        "id": "consultations"
+    },
+    {
+        "parent": "consultations",
+        "class": "category",
+        "id": "consultations-campus"
+    },
+    {
+        "parent": "consultations-campus",
+        "class": "enquiry",
+        "id": "employee-consultations-accommodation",
+        "roles": ["employee"],
+        "alias": "employee-consultations"
+    },
+    {
+        "parent": "consultations-campus",
+        "class": "enquiry",
+        "id": "student-consultations-accommodation",
+        "roles": ["student"],
+        "alias": "student-consultations"
+    },
+    {
+        "parent": "consultations-campus",
+        "class": "enquiry",
+        "id": "employee-consultations-maintenance",
+        "roles": ["employee"],
+        "alias": "employee-consultations"
+    },
+    {
+        "parent": "consultations-campus",
+        "class": "enquiry",
+        "id": "student-consultations-maintenance",
+        "roles": ["student"],
+        "alias": "student-consultations"
+    },
+    {
+        "parent": "consultations-campus",
+        "class": "enquiry",
+        "id": "employee-consultations-cleaning",
+        "roles": ["employee"],
+        "alias": "employee-consultations"
+    },
+    {
+        "parent": "consultations-campus",
+        "class": "enquiry",
+        "id": "student-consultations-cleaning",
+        "roles": ["student"],
+        "alias": "student-consultations"
+    },
+    {
+        "parent": "consultations-campus",
+        "class": "enquiry",
+        "id": "employee-consultations-security",
+        "roles": ["employee"],
+        "alias": "employee-consultations"
+    },
+    {
+        "parent": "consultations-campus",
+        "class": "enquiry",
+        "id": "student-consultations-security",
+        "roles": ["student"],
+        "alias": "student-consultations"
+    },
+    {
+        "parent": "consultations-campus",
+        "class": "enquiry",
+        "id": "employee-consultations-feeding",
+        "roles": ["employee"],
+        "alias": "employee-consultations"
+    },
+    {
+        "parent": "consultations-campus",
+        "class": "enquiry",
+        "id": "student-consultations-feeding",
+        "roles": ["student"],
+        "alias": "student-consultations"
+    },
+    {
+        "parent": "consultations-campus",
+        "class": "enquiry",
+        "id": "employee-consultations-medicine",
+        "roles": ["employee"],
+        "alias": "employee-consultations"
+    },
+    {
+        "parent": "consultations-campus",
+        "class": "enquiry",
+        "id": "student-consultations-medicine",
+        "roles": ["student"],
+        "alias": "student-consultations"
+    },
+    {
+        "parent": "consultations-campus",
+        "class": "enquiry",
+        "id": "employee-consultations-transport",
+        "roles": ["employee"],
+        "alias": "employee-consultations"
+    },
+    {
+        "parent": "consultations-campus",
+        "class": "enquiry",
+        "id": "student-consultations-transport",
+        "roles": ["student"],
+        "alias": "student-consultations"
+    },
+    {
+        "parent": "consultations-campus",
+        "class": "enquiry",
+        "id": "employee-consultations-settle",
+        "roles": ["employee"],
+        "alias": "employee-consultations"
+    },
+    {
+        "parent": "consultations-campus",
+        "class": "enquiry",
+        "id": "student-consultations-settle",
+        "roles": ["student"],
+        "alias": "student-consultations"
+    },
+    {
+        "parent": "consultations-campus",
+        "class": "enquiry",
+        "id": "employee-consultations-campus-question",
+        "roles": ["employee"],
+        "alias": "employee-consultations"
+    },
+    {
+        "parent": "consultations-campus",
+        "class": "enquiry",
+        "id": "student-consultations-campus-question",
+        "roles": ["student"],
+        "alias": "student-consultations"
+    },
+    {
+        "parent": "consultations",
+        "class": "category",
+        "id": "consultations-education"
+    },
+    {
+        "parent": "consultations-education",
+        "class": "enquiry",
+        "id": "student-consultations-dates",
+        "roles": ["student"],
+        "alias": "student-consultations",
+        "archive": true
+    },
+    {
+        "parent": "consultations-education",
+        "class": "enquiry",
+        "id": "student-consultations-schedule",
+        "roles": ["student"],
+        "alias": "student-consultations"
+    },
+    {
+        "parent": "consultations-education",
+        "class": "enquiry",
+        "id": "student-consultations-student-office",
+        "roles": ["student"],
+        "alias": "student-consultations",
+        "archive": true
+    },
+    {
+        "parent": "consultations-education",
+        "class": "enquiry",
+        "id": "student-consultations-scholarship",
+        "roles": ["student"],
+        "alias": "student-consultations"
+    },
+    {
+        "parent": "consultations-education",
+        "class": "enquiry",
+        "id": "student-consultations-library",
+        "roles": ["student"],
+        "alias": "student-consultations"
+    },
+    {
+        "parent": "consultations-education",
+        "class": "enquiry",
+        "id": "student-consultations-contract",
+        "roles": ["student"],
+        "alias": "student-consultations"
+    },
+    {
+        "parent": "consultations-education",
+        "class": "enquiry",
+        "id": "student-consultations-online-courses",
+        "roles": ["student"],
+        "alias": "student-consultations"
+    },
+    {
+        "parent": "consultations-education",
+        "class": "enquiry",
+        "id": "student-consultations-contingent-movement",
+        "roles": ["student"],
+        "alias": "student-consultations"
+    },
+    {
+        "parent": "consultations-education",
+        "class": "enquiry",
+        "id": "student-consultations-leave-of-absence",
+        "roles": ["student"],
+        "alias": "student-consultations"
+    },
+    {
+        "parent": "consultations-education",
+        "class": "enquiry",
+        "id": "student-consultations-individual-curriculum",
+        "roles": ["student"],
+        "alias": "student-consultations"
+    },
+    {
+        "parent": "consultations-education",
+        "class": "enquiry",
+        "id": "student-consultations-documents",
+        "roles": ["student"],
+        "alias": "student-consultations"
+    },
+    {
+        "parent": "consultations-education",
+        "class": "enquiry",
+        "id": "student-consultations-exam-retake",
+        "roles": ["student"],
+        "alias": "student-consultations"
+    },
+    {
+        "parent": "consultations-education",
+        "class": "enquiry",
+        "id": "student-consultations-office",
+        "roles": ["student"],
+        "alias": "student-consultations",
+        "archive": true
+    },
+    {
+        "parent": "consultations-education",
+        "class": "enquiry",
+        "id": "student-consultations-government-sponsorship",
+        "roles": ["student"],
+        "alias": "student-consultations",
+        "archive": true
+    },
+    {
+        "parent": "consultations-education",
+        "class": "enquiry",
+        "id": "student-consultations-military",
+        "roles": ["student"],
+        "alias": "student-consultations"
+    },
+    {
+        "parent": "consultations-education",
+        "class": "enquiry",
+        "id": "student-consultations-education-question",
+        "roles": ["student"],
+        "alias": "student-consultations"
+    },
+    {
+        "parent": "consultations",
+        "class": "category",
+        "id": "consultations-features"
+    },
+    {
+        "parent": "consultations-features",
+        "class": "enquiry",
+        "id": "student-consultations-extracurricular",
+        "roles": ["student"],
+        "alias": "student-consultations"
+    },
+    {
+        "parent": "consultations-features",
+        "class": "enquiry",
+        "id": "student-consultations-education",
+        "roles": ["student"],
+        "alias": "student-consultations"
+    },
+    {
+        "parent": "consultations-features",
+        "class": "enquiry",
+        "id": "student-consultations-aene",
+        "roles": ["student"],
+        "alias": "student-consultations"
+    },
+    {
+        "parent": "enquiries",
+        "class": "category",
+        "id": "enquiries-campus"
+    },
+    {
+        "parent": "consultations-features",
+        "class": "enquiry",
+        "id": "student-consultations-features-scholarship",
+        "roles": ["student"],
+        "alias": "student-consultations"
+    },
+    {
+        "parent": "consultations-features",
+        "class": "enquiry",
+        "id": "student-consultations-allowance",
+        "roles": ["student"],
+        "alias": "student-consultations"
+    },
+    {
+        "parent": "consultations-features",
+        "class": "enquiry",
+        "id": "student-consultations-grants-and-internships",
+        "roles": ["student"],
+        "alias": "student-consultations"
+    },
+    {
+        "parent": "consultations-features",
+        "class": "enquiry",
+        "id": "student-consultations-achievement-scholarships",
+        "roles": ["student"],
+        "alias": "student-consultations"
+    },
+    {
+        "parent": "consultations-features",
+        "class": "enquiry",
+        "id": "student-consultations-event",
+        "roles": ["student"],
+        "alias": "student-consultations"
+    },
+    {
+        "parent": "consultations-features",
+        "class": "enquiry",
+        "id": "student-consultations-volunteer",
+        "roles": ["student"],
+        "alias": "student-consultations"
+    },
+    {
+        "parent": "consultations-features",
+        "class": "enquiry",
+        "id": "student-consultations-participant",
+        "roles": ["student"],
+        "alias": "student-consultations"
+    },
+    {
+        "parent": "consultations-features",
+        "class": "enquiry",
+        "id": "student-consultations-features-question",
+        "roles": ["student"],
+        "alias": "student-consultations"
+    },
+    {
+        "parent": null,
+        "class": "category",
+        "id": "enquiries"
+    },
+    {
+        "parent": null,
+        "class": "enquiry",
+        "id": "student-eo-feedback",
+        "roles": ["student"]
+    },
+    {
+        "parent": "enquiries",
+        "class": "category",
+        "id": "enquiries-education"
+    },
+    {
+        "parent": "enquiries-education",
+        "class": "category",
+        "id": "enquiries-library"
+    },
+    {
+        "parent": "enquiries-library",
+        "class": "enquiry",
+        "id": "student-enquiries-library-literature",
+        "roles": ["student"],
+        "alias": "student-reports"
+    },
+    {
+        "parent": "enquiries-library",
+        "class": "enquiry",
+        "id": "student-enquiries-library-question",
+        "roles": ["student"],
+        "alias": "student-reports"
+    },
+    {
+        "parent": "enquiries-education",
+        "class": "category",
+        "id": "enquiries-fee-based-education"
+    },
+    {
+        "parent": "enquiries-fee-based-education",
+        "class": "enquiry",
+        "id": "student-enquiries-additional-agreement-not-issued",
+        "roles": ["student"],
+        "alias": "student-reports"
+    },
+    {
+        "parent": "enquiries-fee-based-education",
+        "class": "enquiry",
+        "id": "student-enquiries-payment-terms-question",
+        "roles": ["student"],
+        "alias": "student-reports"
+    },
+    {
+        "parent": "enquiries-fee-based-education",
+        "class": "enquiry",
+        "id": "student-enquiries-cost-question",
+        "roles": ["student"],
+        "alias": "student-reports"
+    },
+    {
+        "parent": "enquiries-fee-based-education",
+        "class": "enquiry",
+        "id": "student-enquiries-payment-documents-copies",
+        "roles": ["student"],
+        "alias": "student-reports"
+    },
+    {
+        "parent": "enquiries-fee-based-education",
+        "class": "enquiry",
+        "id": "student-enquiries-contract-termination-question",
+        "roles": ["student"],
+        "alias": "student-reports"
+    },
+    {
+        "parent": "enquiries-fee-based-education",
+        "class": "enquiry",
+        "id": "student-enquiries-fee-based-education-question",
+        "roles": ["student"],
+        "alias": "student-reports"
+    },
+    {
+        "parent": "enquiries-education",
+        "class": "category",
+        "id": "enquiries-exam-period"
+    },
+    {
+        "parent": "enquiries-exam-period",
+        "class": "category",
+        "id": "enquiries-exams"
+    },
+    {
+        "parent": "enquiries-exams",
+        "class": "enquiry",
+        "id": "student-enquiries-exams-appeal",
+        "roles": ["student"],
+        "alias": "student-reports",
+        "archive": true
+    },
+    {
+        "parent": "enquiries-exams",
+        "class": "enquiry",
+        "id": "student-enquiries-exams-violation-report",
+        "roles": ["student"],
+        "alias": "student-education-reports-complaint"
+    },
+    {
+        "parent": "enquiries-exams",
+        "class": "enquiry",
+        "id": "student-enquiries-exams-question",
+        "roles": ["student"],
+        "alias": "student-reports"
+    },
+    {
+        "parent": "enquiries-exams",
+        "class": "enquiry",
+        "id": "student-enquiries-commissions-schedule-violation",
+        "roles": ["student"],
+        "alias": "student-education-reports-complaint"
+    },
+    {
+        "parent": "enquiries-exam-period",
+        "class": "category",
+        "id": "enquiries-commissions"
+    },
+    {
+        "parent": "enquiries-commissions",
+        "class": "enquiry",
+        "id": "student-enquiries-commissions-academic-debts-list",
+        "roles": ["student"],
+        "alias": "student-education-reports-complaint"
+    },
+    {
+        "parent": "enquiries-commissions",
+        "class": "enquiry",
+        "id": "student-enquiries-commissions-info-problem",
+        "roles": ["student"],
+        "alias": "student-reports",
+        "archive": true
+    },
+    {
+        "parent": "enquiries-commissions",
+        "class": "enquiry",
+        "id": "student-enquiries-commissions-kicked-out",
+        "roles": ["student"],
+        "alias": "student-education-reports-complaint"
+    },
+    {
+        "parent": "consultations-education",
+        "class": "enquiry",
+        "id": "student-enquiries-commissions-question",
+        "roles": ["student"],
+        "alias": "student-reports"
+    },
+    {
+        "parent": "services-student-contacting-dispute-resolution-commission",
+        "class": "enquiry",
+        "id": "student-enquiries-commissions-dispute",
+        "roles": ["student"]
+    },
+    {
+        "parent": "enquiries-education",
+        "class": "category",
+        "id": "enquiries-educational-process"
+    },
+    {
+        "parent": "enquiries-educational-process",
+        "class": "category",
+        "id": "enquiries-education-quality"
+    },
+    {
+        "parent": "enquiries-education-quality",
+        "class": "enquiry",
+        "id": "student-enquiries-education-quality-teacher-absence-report",
+        "roles": ["student"],
+        "alias": "student-education-reports-complaint"
+    },
+    {
+        "parent": "enquiries-education-quality",
+        "class": "enquiry",
+        "id": "student-enquiries-education-quality-teacher-lateness-report",
+        "roles": ["student"],
+        "alias": "student-education-reports-complaint"
+    },
+    {
+        "parent": "enquiries-education-quality",
+        "class": "enquiry",
+        "id": "student-enquiries-education-quality-consultation-lack-report",
+        "roles": ["student"],
+        "alias": "student-education-reports-complaint"
+    },
+    {
+        "parent": "enquiries-education-quality",
+        "class": "enquiry",
+        "id": "student-enquiries-education-quality-kicked-out-report",
+        "roles": ["student"],
+        "alias": "student-education-reports"
+    },
+    {
+        "parent": "enquiries-education-quality",
+        "class": "enquiry",
+        "id": "student-enquiries-education-quality-retake-date-report",
+        "roles": ["student"],
+        "alias": "student-education-reports-complaint"
+    },
+    {
+        "parent": "enquiries-education-quality",
+        "class": "enquiry",
+        "id": "student-enquiries-education-quality-methodological-materials-report",
+        "roles": ["student"],
+        "alias": "student-education-reports-complaint"
+    },
+    {
+        "parent": "enquiries-education-quality",
+        "class": "enquiry",
+        "id": "student-enquiries-education-quality-conflict-report",
+        "roles": ["student"],
+        "alias": "student-education-reports-complaint"
+    },
+    {
+        "parent": "enquiries-education-quality",
+        "class": "enquiry",
+        "id": "student-enquiries-education-quality-question",
+        "roles": ["student"],
+        "alias": "student-reports"
+    },
+    {
+        "parent": "enquiries-educational-process",
+        "class": "category",
+        "id": "enquiries-schedule"
+    },
+    {
+        "parent": "enquiries-schedule",
+        "class": "enquiry",
+        "id": "student-enquiries-schedule-classroom-report",
+        "roles": ["student"],
+        "alias": "student-reports"
+    },
+    {
+        "parent": "enquiries-schedule",
+        "class": "enquiry",
+        "id": "student-enquiries-schedule-lessons-report",
+        "roles": ["student"],
+        "alias": "student-reports"
+    },
+    {
+        "parent": "enquiries-schedule",
+        "class": "enquiry",
+        "id": "student-enquiries-schedule-teacher-report",
+        "roles": ["student"],
+        "alias": "student-reports"
+    },
+    {
+        "parent": "enquiries-schedule",
+        "class": "enquiry",
+        "id": "student-enquiries-schedule-inconvenient-report",
+        "roles": ["student"],
+        "alias": "student-reports"
+    },
+    {
+        "parent": "enquiries-schedule",
+        "class": "enquiry",
+        "id": "student-enquiries-schedule-question",
+        "roles": ["student"],
+        "alias": "student-reports"
+    },
+    {
+        "parent": "enquiries-educational-process",
+        "class": "category",
+        "id": "enquiries-online-courses"
+    },
+    {
+        "parent": "enquiries-online-courses",
+        "class": "enquiry",
+        "id": "student-enquiries-online-courses-enrollment-problem-report",
+        "roles": ["student"],
+        "alias": "student-reports"
+    },
+    {
+        "parent": "enquiries-online-courses",
+        "class": "enquiry",
+        "id": "student-enquiries-online-courses-proctoring-report",
+        "roles": ["student"],
+        "alias": "student-reports"
+    },
+    {
+        "parent": "enquiries-online-courses",
+        "class": "enquiry",
+        "id": "student-enquiries-online-courses-authentication-report",
+        "roles": ["student"],
+        "alias": "student-reports"
+    },
+    {
+        "parent": "enquiries-online-courses",
+        "class": "enquiry",
+        "id": "student-enquiries-online-courses-question",
+        "roles": ["student"],
+        "alias": "student-reports"
+    },
+    {
+        "parent": "enquiries-educational-process",
+        "class": "category",
+        "id": "enquiries-gradebook"
+    },
+    {
+        "parent": "enquiries-gradebook",
+        "class": "enquiry",
+        "id": "student-enquiries-gradebook-lack-report",
+        "roles": ["student"]
+    },
+    {
+        "parent": "enquiries-gradebook",
+        "class": "enquiry",
+        "id": "student-enquiries-gradebook-wrong-report",
+        "roles": ["student"]
+    },
+    {
+        "parent": "enquiries-gradebook",
+        "class": "enquiry",
+        "id": "student-enquiries-gradebook-question",
+        "roles": ["student"],
+        "alias": "student-reports",
+        "archive": true
+    },
+    {
+        "parent": "enquiries-educational-process",
+        "class": "category",
+        "id": "enquiries-educational-transfers",
+        "archive": true
+    },
+    {
+        "parent": "enquiries-educational-process",
+        "class": "enquiry",
+        "id": "student-enquiries-educational-transfers-procedure",
+        "roles": ["student"],
+        "alias": "student-reports"
+    },
+    {
+        "parent": "enquiries-educational-transfers",
+        "class": "enquiry",
+        "id": "student-enquiries-educational-transfers-remote",
+        "roles": ["student"],
+        "alias": "student-reports",
+        "archive": true
+    },
+    {
+        "parent": "enquiries-educational-transfers",
+        "class": "enquiry",
+        "id": "student-enquiries-educational-transfers-question",
+        "roles": ["student"],
+        "alias": "student-reports",
+        "archive": true
+    },
+    {
+        "parent": "enquiries-educational-process",
+        "class": "enquiry",
+        "id": "student-enquiries-educational-transfers-schedule",
+        "roles": ["student"],
+        "alias": "student-reports"
+    },
+    {
+        "parent": "enquiries-education",
+        "class": "category",
+        "id": "enquiries-military-training-center"
+    },
+    {
+        "parent": "enquiries-military-training-center",
+        "class": "enquiry",
+        "id": "student-enquiries-military-training-center-question",
+        "roles": ["student"],
+        "alias": "student-reports"
+    },
+    {
+        "parent": "enquiries-campus",
+        "class": "category",
+        "id": "enquiries-campus-service"
+    },
+    {
+        "parent": "enquiries-campus-service",
+        "class": "category",
+        "id": "enquiries-campus-service-feeding"
+    },
+    {
+        "parent": "enquiries-campus-service-feeding",
+        "class": "enquiry",
+        "id": "student-enquiries-feeding-sanitary-violation-report",
+        "roles": ["student"],
+        "alias": "student-reports"
+    },
+    {
+        "parent": "enquiries-campus-service-feeding",
+        "class": "enquiry",
+        "id": "student-enquiries-feeding-food-poisoning-report",
+        "roles": ["student"],
+        "alias": "student-reports"
+    },
+    {
+        "parent": "enquiries-campus-service-feeding",
+        "class": "enquiry",
+        "id": "student-enquiries-feeding-staff-report",
+        "roles": ["student"],
+        "alias": "student-reports"
+    },
+    {
+        "parent": "enquiries-campus-service-feeding",
+        "class": "enquiry",
+        "id": "student-enquiries-feeding-question",
+        "roles": ["student"],
+        "alias": "student-reports"
+    },
+    {
+        "parent": "enquiries-campus-service",
+        "class": "category",
+        "id": "enquiries-campus-service-cleaning"
+    },
+    {
+        "parent": "enquiries-campus-service-cleaning",
+        "class": "enquiry",
+        "id": "student-enquiries-cleaning-quality-report",
+        "roles": ["student"],
+        "alias": "student-reports"
+    },
+    {
+        "parent": "enquiries-campus-service-cleaning",
+        "class": "enquiry",
+        "id": "student-enquiries-cleaning-question",
+        "roles": ["student"],
+        "alias": "student-reports"
+    },
+    {
+        "parent": "enquiries-campus-service",
+        "class": "category",
+        "id": "enquiries-campus-service-maintenance"
+    },
+    {
+        "parent": "enquiries-campus-service-maintenance",
+        "class": "enquiry",
+        "id": "student-enquiries-maintenance-quality-report",
+        "roles": ["student"],
+        "alias": "student-reports"
+    },
+    {
+        "parent": "enquiries-campus-service-maintenance",
+        "class": "enquiry",
+        "id": "student-enquiries-maintenance-question",
+        "roles": ["student"],
+        "alias": "student-reports"
+    },
+    {
+        "parent": "enquiries-campus-service",
+        "class": "enquiry",
+        "id": "enquiries-campus-question",
+        "roles": ["student"],
+        "alias": "student-reports"
+    },
+    {
+        "parent": "enquiries-campus",
+        "class": "category",
+        "id": "enquiries-campus-medicine"
+    },
+    {
+        "parent": "enquiries-campus-medicine",
+        "class": "enquiry",
+        "id": "student-enquiries-medical-assistance-denial-report",
+        "roles": ["student"],
+        "alias": "student-reports"
+    },
+    {
+        "parent": "enquiries-campus-medicine",
+        "class": "enquiry",
+        "id": "student-enquiries-medical-care-denial-report",
+        "roles": ["student"],
+        "alias": "student-reports"
+    },
+    {
+        "parent": "enquiries-campus-medicine",
+        "class": "enquiry",
+        "id": "student-enquiries-medicine-question",
+        "roles": ["student"],
+        "alias": "student-reports"
+    },
+    {
+        "parent": "enquiries-campus",
+        "class": "category",
+        "id": "enquiries-campus-security"
+    },
+    {
+        "parent": "enquiries-campus-security",
+        "class": "enquiry",
+        "id": "student-enquiries-security-pass-confiscation-report",
+        "roles": ["student"],
+        "alias": "student-reports"
+    },
+    {
+        "parent": "enquiries-campus-security",
+        "class": "enquiry",
+        "id": "student-enquiries-security-entry-denial-report",
+        "roles": ["student"],
+        "alias": "student-reports"
+    },
+    {
+        "parent": "enquiries-campus-security",
+        "class": "enquiry",
+        "id": "student-enquiries-security-rights-violation-report",
+        "roles": ["student"],
+        "alias": "student-reports"
+    },
+    {
+        "parent": "enquiries-campus-security",
+        "class": "enquiry",
+        "id": "student-enquiries-security-regime-violation-report",
+        "roles": ["student"],
+        "alias": "student-reports"
+    },
+    {
+        "parent": "enquiries-campus-security",
+        "class": "enquiry",
+        "id": "student-enquiries-security-staff-report",
+        "roles": ["student"],
+        "alias": "student-reports"
+    },
+    {
+        "parent": "enquiries-campus-security",
+        "class": "enquiry",
+        "id": "student-enquiries-security-public-order-crime-report",
+        "roles": ["student"],
+        "alias": "student-reports"
+    },
+    {
+        "parent": "enquiries-campus-security",
+        "class": "enquiry",
+        "id": "student-enquiries-security-question",
+        "roles": ["student"],
+        "alias": "student-reports"
+    },
+    {
+        "parent": "enquiries-campus",
+        "class": "category",
+        "id": "enquiries-campus-transport"
+    },
+    {
+        "parent": "enquiries-campus-transport",
+        "class": "enquiry",
+        "id": "student-enquiries-transport-question",
+        "roles": ["student"],
+        "alias": "student-reports"
+    },
+    {
+        "parent": "enquiries-campus",
+        "class": "category",
+        "id": "enquiries-campus-accommodation"
+    },
+    {
+        "parent": "enquiries-campus-accommodation",
+        "class": "enquiry",
+        "id": "student-enquiries-accommodation-extending",
+        "roles": ["student"],
+        "alias": "student-reports",
+        "archive": true
+    },
+    {
+        "parent": "enquiries-campus-accommodation",
+        "class": "enquiry",
+        "id": "student-enquiries-accommodation-resettle",
+        "roles": ["student"],
+        "alias": "student-reports",
+        "archive": true
+    },
+    {
+        "parent": "enquiries-campus-accommodation",
+        "class": "enquiry",
+        "id": "student-enquiries-accommodation-how-to",
+        "roles": ["student"],
+        "alias": "student-reports",
+        "archive": true
+    },
+    {
+        "parent": "enquiries-campus-accommodation",
+        "class": "enquiry",
+        "id": "student-enquiries-accommodation-staff-report",
+        "roles": ["student"],
+        "alias": "student-reports",
+        "archive": true
+    },
+    {
+        "parent": "enquiries-campus-accommodation",
+        "class": "enquiry",
+        "id": "student-enquiries-accommodation-room-report",
+        "roles": ["student"],
+        "alias": "student-reports",
+        "archive": true
+    },
+    {
+        "parent": "enquiries-campus-accommodation",
+        "class": "enquiry",
+        "id": "student-enquiries-accommodation-settle-resettle-question",
+        "roles": ["student"],
+        "alias": "student-reports",
+        "archive": true
+    },
+    {
+        "parent": "enquiries-campus-accommodation",
+        "class": "enquiry",
+        "id": "employee-enquiries-accommodation-question",
+        "roles": ["employee"],
+        "alias": "employee-reports"
+    },
+    {
+        "parent": "enquiries-campus-accommodation",
+        "class": "enquiry",
+        "id": "student-enquiries-accommodation-question",
+        "roles": ["student"],
+        "alias": "student-reports"
+    },
+    {
+        "parent": "enquiries",
+        "class": "category",
+        "id": "enquiries-features"
+    },
+    {
+        "parent": "enquiries-features",
+        "class": "category",
+        "id": "enquiries-features-scholarships"
+    },
+    {
+        "parent": "enquiries-features-scholarships",
+        "class": "enquiry",
+        "id": "student-enquiries-scholarship-mistake",
+        "roles": ["student"],
+        "alias": "student-reports"
+    },
+    {
+        "parent": "enquiries-features-scholarships",
+        "class": "enquiry",
+        "id": "student-enquiries-scholarship-problem",
+        "roles": ["student"],
+        "alias": "student-reports"
+    },
+    {
+        "parent": "enquiries-features-scholarships",
+        "class": "enquiry",
+        "id": "student-enquiries-allowance-problem",
+        "roles": ["student"],
+        "alias": "student-reports"
+    },
+    {
+        "parent": "enquiries-features-scholarships",
+        "class": "enquiry",
+        "id": "student-enquiries-scholarship-question",
+        "roles": ["student"],
+        "alias": "student-reports"
+    },
+    {
+        "parent": "enquiries-features-scholarships",
+        "class": "category",
+        "id": "enquiries-documents-and-certificates",
+        "archive": true
+    },
+    {
+        "parent": "enquiries-documents-and-certificates",
+        "class": "enquiry",
+        "id": "student-enquiries-documents-poor-service",
+        "roles": ["student"],
+        "alias": "student-reports",
+        "archive": true
+    },
+    {
+        "parent": "enquiries-documents-and-certificates",
+        "class": "enquiry",
+        "id": "student-enquiries-documents-question",
+        "roles": ["student"],
+        "alias": "student-reports",
+        "archive": true
+    },
+    {
+        "parent": "enquiries-features",
+        "class": "category",
+        "id": "enquiries-features-grants-and-internships"
+    },
+    {
+        "parent": "enquiries-features-grants-and-internships",
+        "class": "enquiry",
+        "id": "student-enquiries-grants-and-internships-question",
+        "roles": ["student"],
+        "alias": "student-reports"
+    },
+    {
+        "parent": "enquiries-features",
+        "class": "enquiry",
+        "id": "student-enquiries-aene-question",
+        "roles": ["student"],
+        "alias": "student-reports"
+    },
+    {
+        "parent": "enquiries-features",
+        "class": "category",
+        "id": "enquiries-features-resource-map"
+    },
+    {
+        "parent": "enquiries-features-resource-map",
+        "class": "enquiry",
+        "id": "student-enquiries-resource-map-question",
+        "roles": ["student"],
+        "alias": "student-reports"
+    },
+
+
+    {
+        "parent": null,
+        "class": "enquiry",
+        "id": "student-complaints",
+        "roles": ["student"],
+        "archive": true
+    },
+    {
+        "parent": null,
+        "class": "enquiry",
+        "id": "student-accommodation",
+        "roles": ["student"],
+        "archive": true
+    },
+    {
+        "parent": null,
+        "class": "enquiry",
+        "id": "student-reference-letter",
+        "roles": ["student"],
+        "archive": true
+    },
+    {
+        "parent": null,
+        "class": "enquiry",
+        "id": "student-scholarship-problem",
+        "roles": ["student"],
+        "archive": true
+    },
+    {
+        "parent": null,
+        "class": "enquiry",
+        "id": "student-scholarship-question",
+        "roles": ["student"],
+        "archive": true
+    }
+]

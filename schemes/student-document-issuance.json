@@ -1,0 +1,78 @@
+{
+    "id": "student-document-issuance",
+    "guidRequestType": "a5cfef0b-c660-11ea-a48b-00155d203945",
+    "structure": [
+        {
+            "class": "field",
+            "type": "radio",
+            "name": "documentPurpose",
+            "format": "string",
+            "read": "items",
+            "label": "DOCUMENT_ISSUANCE_DOCUMENT_PURPOSE",
+            "items": [
+                "DVFU_COMMON",
+                "DVFU_STUDENTS"
+            ],
+            "required": true
+        },
+        {
+            "class": "fieldset",
+            "name": "documentPurposeCommon",
+            "enabledRules": {
+                "from": "documentPurpose",
+                "value": "DVFU_COMMON"
+            },
+            "children": [
+                {
+                    "class": "field",
+                    "type": "checkbox",
+                    "name": "documentTypeCommon",
+                    "format": "string",
+                    "read": "items",
+                    "label": "DOCUMENT_ISSUANCE_DOCUMENT_TYPE",
+                    "items": [
+                        "GRADEBOOK_COPY",
+                        "ORDER_COPY",
+                        "LICENSE_COPY",
+                        "STATE_ACCREDITATION_CERTIFICATE_COPY",
+                        "ORDER_EXTRACT"
+                    ],
+                    "required": true
+                }
+            ]
+        },
+        {
+            "class": "fieldset",
+            "name": "documentPurposeStudents",
+            "enabledRules": {
+                "from": "documentPurpose",
+                "value": "DVFU_STUDENTS"
+            },
+            "children": [
+                {
+                    "class": "field",
+                    "type": "radio",
+                    "name": "documentTypeStudents",
+                    "format": "string",
+                    "read": "items",
+                    "label": "DOCUMENT_ISSUANCE_DOCUMENT_TYPE",
+                    "items": [
+                        "SCHOOL_CERTIFICATE",
+                        "NPO_DIPLOMA",
+                        "SPO_DIPLOMA",
+                        "HIGH_SCHOOL_DIPLOMA"
+                    ],
+                    "required": true
+                }
+            ]
+        },
+        {
+            "class": "include",
+            "src": "_application_download_fields"
+        },
+        {
+            "class": "include",
+            "src": "_obtaining"
+        }
+    ]
+}

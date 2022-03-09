@@ -1,0 +1,25 @@
+{
+    "id": "student-government-sponsorship",
+    "guidRequestType": "40f7ae44-c660-11ea-a48b-00155d203945",
+    "files": [
+        {
+            "guid": "1f7e4d0f-a44b-4f71-913a-983d6da8c749",
+            "label": "BLANK_DEFAULT",
+            "file": "zayavlenie-perevod-na-byudzhet-20211206.pdf"
+        }
+    ],
+    "structure": [
+        {
+            "class": "include",
+            "src": "_application_download_fields"
+        },
+        {
+            "class": "include",
+            "src": "_application_download_file"
+        },
+        {
+            "class": "include",
+            "src": "_application_download_file_multiple_required"
+        }
+    ]
+}

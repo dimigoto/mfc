@@ -1,0 +1,28 @@
+{
+    "id": "student-eo-feedback",
+    "guidRequestType": "f53a04fe-7289-11ec-a204-00155d203652",
+    "structure": [
+        {
+            "class": "field",
+            "type": "string",
+            "name": "theme",
+            "format": "string",
+            "read": "string",
+            "label": "THEME",
+            "required": true
+        },
+        {
+            "class": "include",
+            "src": "_phone"
+        },
+        {
+            "class": "field",
+            "type": "textarea",
+            "name": "comment",
+            "format": "string",
+            "read": "string",
+            "label": "MESSAGE",
+            "required": true
+        }
+    ]
+}

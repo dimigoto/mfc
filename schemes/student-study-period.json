@@ -1,0 +1,107 @@
+{
+    "id": "student-study-period",
+    "guidRequestType": "263118ec-7482-11ea-97fc-00155d203945",
+    "structure": [
+        {
+            "class": "include",
+            "src": "_full_name"
+        },
+        {
+            "class": "include",
+            "src": "_birthday"
+        },
+        {
+            "class": "field",
+            "type": "previousEducationDocument",
+            "name": "previousEducationDocument",
+            "format": "string",
+            "read": "string",
+            "label": "PREVIOUS_EDUCATION_DOCUMENT",
+            "required": true
+        },
+        {
+            "class": "field",
+            "type": "educationProgram",
+            "name": "educationProgram",
+            "format": "string",
+            "read": "string",
+            "label": "EDUCATION_PROGRAM",
+            "required": true
+        },
+        {
+            "class": "fieldset",
+            "name": "yearsInterval",
+            "type": "yearsInterval",
+            "children": [
+                {
+                    "class": "field",
+                    "type": "yearsInterval",
+                    "name": "periodFrom",
+                    "format": "string",
+                    "read": "string",
+                    "label": "STUDY_PERIOD_FROM",
+                    "required": true,
+                    "maxWidth": [
+                        {
+                            "point": "lg",
+                            "size": 2
+                        },
+                        {
+                            "point": "md",
+                            "size": 3
+                        },
+                        {
+                            "point": "sm",
+                            "size": 4
+                        },
+                        {
+                            "point": "xs",
+                            "size": 6
+                        }
+                    ]
+                },
+                {
+                    "class": "field",
+                    "type": "yearsInterval",
+                    "name": "periodTo",
+                    "format": "string",
+                    "read": "string",
+                    "label": "STUDY_PERIOD_TO",
+                    "required": true,
+                    "maxWidth": [
+                        {
+                            "point": "lg",
+                            "size": 2
+                        },
+                        {
+                            "point": "md",
+                            "size": 3
+                        },
+                        {
+                            "point": "sm",
+                            "size": 4
+                        },
+                        {
+                            "point": "xs",
+                            "size": 6
+                        }
+                    ]
+                }
+            ],
+            "label": "STUDY_PERIOD",
+            "hint": "STUDY_PERIOD_HINT"
+        },
+        {
+            "class": "include",
+            "src": "_phone_not_required"
+        },
+        {
+            "class": "include",
+            "src": "_obtaining"
+        },
+        {
+            "class": "include",
+            "src": "_comment"
+        }
+    ]
+}

@@ -1,0 +1,64 @@
+{
+    "id": "employee-snils-update",
+    "guidRequestType": "ef9c154e-7a61-11eb-a200-00155d203652",
+    "rateLimit" : 0,
+    "structure": [
+        {
+            "class": "include",
+            "src": "_full_name"
+        },
+        {
+            "class": "include",
+            "src": "_employee_department"
+        },
+        {
+            "class": "include",
+            "src": "_corporateEmail"
+        },
+        {
+            "class": "include",
+            "src": "_phone"
+        },
+        {
+            "class": "field",
+            "type": "radio",
+            "name": "reason",
+            "format": "string",
+            "read": "items",
+            "label": "EMPLOYEE_SNILS_UPDATE_REASON",
+            "items": [
+                "NAME",
+                "MISTAKE"
+            ],
+            "required": true,
+            "maxWidth": [
+                {
+                    "point": "lg",
+                    "size": 6
+                },
+                {
+                    "point": "md",
+                    "size": 8
+                }
+            ]
+        },
+        {
+            "class": "file",
+            "type": "file",
+            "name": "file",
+            "format": "file",
+            "read": "file",
+            "label": "EMPLOYEE_SNILS_FILE",
+            "hint": "EMPLOYEE_SNILS_FILE_HINT",
+            "required": true
+        },
+        {
+            "class": "include",
+            "src": "_comment"
+        },
+        {
+            "class": "include",
+            "src": "_obtaining"
+        }
+    ]
+}

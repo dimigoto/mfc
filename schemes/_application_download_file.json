@@ -1,0 +1,16 @@
+[
+    {
+        "class": "info",
+        "type": "alert-info",
+        "text": "APPLICATION_FILE_ALERT"
+    },
+    {
+        "class": "file",
+        "type": "file",
+        "name": "file",
+        "format": "file",
+        "read": "file",
+        "label": "APPLICATION_FILE",
+        "required": true
+    }
+]

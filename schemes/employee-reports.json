@@ -1,0 +1,61 @@
+{
+    "id": "employee-reports",
+    "guidRequestType": "c6e3c39a-72fb-11ea-97fc-00155d203945",
+    "structure": [
+        {
+            "class": "include",
+            "src": "_full_name"
+        },
+        {
+            "class": "include",
+            "src": "_employee_department"
+        },
+        {
+            "class": "include",
+            "src": "_corporateEmail"
+        },
+        {
+            "class": "include",
+            "src": "_accommodation"
+        },
+        {
+            "class": "include",
+            "src": "_phone"
+        },
+        {
+            "class": "field",
+            "type": "radio",
+            "name": "enquiryType",
+            "format": "string",
+            "read": "items",
+            "label": "ENQUIRY_TYPE",
+            "items": [
+                "PROPOSAL",
+                "COMPLAINT"
+            ],
+            "required": true
+        },
+        {
+            "class": "file",
+            "type": "file",
+            "name": "file",
+            "format": "file",
+            "read": "file",
+            "label": "FILE",
+            "required": false
+        },
+        {
+            "class": "field",
+            "type": "textarea",
+            "name": "message",
+            "format": "string",
+            "read": "string",
+            "label": "MESSAGE",
+            "required": true
+        },
+        {
+            "class": "include",
+            "src": "_obtaining"
+        }
+    ]
+}

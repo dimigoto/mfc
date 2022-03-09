@@ -1,0 +1,25 @@
+{
+    "id": "student-individual-terms-of-intermediate-certification",
+    "guidRequestType": "37f7e02c-c65f-11ea-a48b-00155d203945",
+    "files": [
+        {
+            "guid": "9219621f-3b3d-4283-965e-94d7c6990bf1",
+            "label": "BLANK_DEFAULT",
+            "file": "zayavlenie-individualnyi-srok-promezhutochnoy-attestacii-20211206.pdf"
+        }
+    ],
+    "structure": [
+        {
+            "class": "include",
+            "src": "_application_download_fields"
+        },
+        {
+            "class": "include",
+            "src": "_application_download_file"
+        },
+        {
+            "class": "include",
+            "src": "_application_download_file_multiple_required"
+        }
+    ]
+}

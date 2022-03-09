@@ -1,0 +1,443 @@
+:root {
+	--background: #fff;
+	--color: #000;
+	--input_color: var(--color);
+	--input_border_width: 1px;
+	--input_border: var(--input_border_width) solid #999;
+	--input_hover_border_color: #f96;
+	--input_background: var(--background);
+	--input_focus_border_color: #f96;
+	--input_margin: 0 4px 2px 0;
+	--input_padding_vertical: 3px;
+	--input_padding_horizontal: 3px;
+	--button_background: #ddd;
+	--button_color: var(--color);
+	--button_padding: 3px 8px;
+	--button_hover_background: #fda;
+	--button_hover_color: var(--color);
+	--button_selected_background: #fc9;
+	--button_selected_color: var(--color);
+	--tab_selected_background: #ddd;
+	--tab_selected_color: var(--color);
+	--frame_border: 1px solid #ccc;
+	--frame_padding: 10px;
+}
+
+
+/* Common */
+	input[type=radio], input[type=checkbox] {
+		vertical-align: middle;
+	}
+
+	html input[type=submit]:hover,
+	html input[type=button]:hover,
+	html button:hover,
+	html .button:hover,
+	html .control_button:hover,
+	html .selectus .selectors label:hover,
+	html .date_picker_control .d:hover {
+		background: var(--button_hover_background);
+		border-color: var(--button_hover_background);
+		color: var(--button_hover_color);
+	}
+
+	textarea, html .disabled textarea, html textarea.disabled,
+	input, html .disabled input, html input.disabled,
+	select, html .disabled select, html select.disabled,
+	button,
+	.button,
+	.control_button,
+	.selectus .select, html .disabled .selectus .select, html .selectus .select.disabled,
+	.selectus .select .selected,
+	.selectus .selectors,
+	.date_picker_control .calendar {
+		-ms-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+		border: 1px solid #999;
+		border: var(--input_border);
+		padding: 2px;
+		padding: var(--input_padding_vertical) var(--input_padding_horizontal);
+		margin: var(--input_margin);
+		line-height: 1.33;
+		background: #fff;
+		background: var(--input_background);
+		color: #000;
+		color: var(--input_color);
+		font-family: inherit;
+		font-size: 100%;
+	}
+	input,
+	select,
+	input[type=submit],
+	input[type=button],
+	button,
+	.button,
+	.control_button {
+		/*height: calc(
+			1.33em
+			+ 2 * (var(--input_border_width) + var(--input_padding_vertical))
+		);*/
+	}
+	.selectus .select {
+		min-height: calc(
+			1.33em
+			+ 2 * (var(--input_border_width) + var(--input_padding_vertical))
+		);
+	}
+	select {
+		max-width: 100%;
+	}
+	input[type=submit],
+	input[type=button],
+	button,
+	.button,
+	.control_button {
+		min-width: calc(
+			1.33em
+			+ 2 * (var(--input_border_width) + var(--input_padding_vertical))
+		);
+	}
+	input[type=file] {
+		background: var(--background);
+	}
+
+	textarea:hover,
+	input:hover,
+	select:hover,
+	.selectus .select:hover {
+		border-color: var(--input_hover_border_color);
+	}
+
+	textarea:focus,
+	input:focus,
+	select:focus,
+	button:focus,
+	.button:focus,
+	.control_button:focus {
+		border-color: var(--input_focus_border_color);
+		box-shadow: none;
+		outline: 0;
+	}
+
+	input[type=file] {
+		border: none ! important;
+	}
+
+	input[type=radio],
+	input[type=checkbox],
+	input[type=file] {
+		border: none ! important;
+		min-height: auto ! important;
+		vertical-align: middle;
+	}
+
+	input[type=submit], html .disabled input[type=submit], html input[type=submit].disabled,
+	input[type=button], html .disabled input[type=button], html input[type=button].disabled,
+	button, html .disabled button, html button.disabled,
+	.button, html .disabled .button, html .button.disabled,
+	.button:link,
+	.button:visited,
+	.control_button, html .disabled .control_button, html .control_button.disabled {
+		background: #ccc;
+		background: var(--button_background);
+		border-color: #ccc;
+		border-color: var(--button_background);
+		color: #000;
+		color: var(--button_color);
+		cursor: pointer;
+		text-align: center;
+		display: inline-block;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+		/*padding: var(--button_padding);*/
+		margin: var(--input_margin);
+		zoom: 1;
+	}
+
+	/*textarea, input[type=text] {
+		width: 100%;
+	}*/
+
+	[readonly],
+	[readonly]:focus {
+		background: inherit;
+	}
+
+/* Layout */
+	.fields.unselected,
+	.sheet.unselected {
+		display: none;
+	}
+	.fields_em {
+		padding: 0;
+		margin: 0 0 2em;
+	}
+	.fields_label {
+		margin: 0 0 1em;
+		padding: 5px 10px;
+		background: #eee;
+	}
+
+	.field {
+		padding: 0;
+		margin: 0 0 20px;
+	}
+	.field_label {
+		margin: 0 0 5px;
+	}
+	.field_control {
+		margin: 0;
+		padding: 0;
+	}
+
+	.option label {
+		margin-right: 1em;
+	}
+
+/* Dependencies */
+	.invalid > .fields_label, .fields_label.invalid,
+	.field.invalid input, .field.invalid textarea, .field.invalid select,
+	input.invalid, textarea.invalid, select.invalid {
+		color: red;
+	}
+	.valid > .fields_label, .fields_label.valid,
+	.field.valid input, .field.valid textarea, .field.valid select,
+	input.valid, textarea.valid, select.valid {
+		color: green;
+	}
+	.required > .fields_label, .fields_label.required,
+	.field.required label, label.required {
+		font-weight: bold;
+	}
+	html .disabled {
+		opacity: 0.45;
+		cursor: default ! important;
+	}
+	html .disabled .disabled {
+		opacity: 1;
+	}
+
+/* Control button */
+	.control_button_dropdown:before {
+		content: '\25bc';
+	}
+	.control_button_inc:before {
+		content: '+';
+	}
+	.control_button_dec:before {
+		content: '\2212';
+	}
+
+/* Tabs sheets*/
+	.tab {
+		display: inline-block;
+		padding: 2px 10px;
+		margin: 0 0 10px;
+		cursor: pointer;
+	}
+	.selected.tab {
+		cursor: default;
+		background: #ccc;
+		background: var(--tab_selected_background);
+		color: var(--tab_selected_color);
+	}
+
+	.sheet {
+		margin: 0 0 30px;
+		padding: var(--frame_padding);
+		border: var(--frame_border);
+	}
+
+/* Password */
+	.control_button_password:before {
+		content: '\a9';
+	}
+	.control_button_password_view:before {
+		opacity: 0.5;
+	}
+
+/* Datetime */
+	.date_control {
+		white-space: nowrap;
+		text-decoration: none;
+	}
+	.datetime .hours, .datetime .minutes {
+		width: 2em;
+		margin-right: 2px;
+		margin-left: 2px;
+	}
+	.datetime .hours {
+		text-align: right;
+	}
+	.time_spliter:before {
+		content: ':';
+	}
+	.date_control .control_button_dec, .date_control .control_button_inc {
+		display: none;
+	}
+
+/* Number */
+	.number .field_control input {
+		width: 10em;
+	}
+
+/* Selectus */
+	.selectus {
+		position: relative;
+		vertical-align: top;
+	}
+	.selectus .field_control {
+		position: relative;
+	}
+	.selectus .select {
+		display: inline-block;
+		text-decoration: none;
+		min-width: 8em;
+		position: relative;
+	}
+	.selectus .select:after {
+		content: '\25bc';
+		line-height: inherit;
+		font-size: 9px;
+		position: absolute;
+		right: 5px;
+		bottom: 50%;
+		margin-bottom: -5px;
+	}
+	.selectus .select:before {
+		content: '';
+		height: 1px;
+		width: 1px;
+		display: inline-block;
+		margin-left: -1px;
+	}
+	.selectus .select .selected {
+		display: inline-block;
+		text-decoration: none;
+		margin: 0 2em 0 0;
+		min-height: auto;
+		border: none;
+		padding: 0;
+	}
+	.selectus .selectors.hidden {
+		display: block;
+		max-height: 0;
+		margin-left: -10000px;
+		/*transition: max-height 0.3s ease, margin-left 0s 0.3s;*/
+	}
+	.selectus .selectors:not(.hidden) {
+		height: auto;
+		max-height: 10em;
+		margin-left: 0;
+		/*transition: max-height 0.3s ease, margin-left 0s;*/
+	}
+	.selectus .selectors {
+		top: 100%;
+		left: 0;
+		position: absolute;
+		margin-top: -2px;
+		padding: 0;
+		overflow: auto;
+		overflow-y: scroll;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+		z-index: 888;
+	}
+	.selectus .selectors .option {
+		display: block;
+		border: 1px solid var(--input_background);
+	}
+	.selectus .selectors input {
+		position: absolute;
+		left: -100px;
+	}
+	.selectus .selectors label {
+		display: block;
+		margin: 0;
+		padding: 4px;
+	}
+	.selectus .selectors .focus {
+		border: 1px solid var(--input_focus_border_color);
+	}
+	.selectus .selectors .selected {
+		background: #ccc;
+		background: var(--button_selected_background);
+		color: var(--button_selected_color);
+	}
+
+/* Date Picker */
+
+	.date_picker_control {
+		display: inline-block;
+		position: relative;
+	}
+	.date_picker_control.focused {
+		z-index: 1000;
+	}
+	.date_picker_control .calendar {
+		position: absolute;
+	}
+	.date_picker_control .calendar .close {
+		position: absolute;
+		right: 5px;
+		cursor: pointer;
+	}
+	.date_picker_control .calendar .days .prev,
+	.date_picker_control .calendar .days .next {
+		opacity: 0.6;
+	}
+	.date_picker_control .selected {
+		background: #ccc;
+		background: var(--button_selected_background);
+		color: var(--button_selected_color);
+	}
+	.date_picker_control .calendar .days .d,
+	.date_picker_control .calendar .days .dn {
+		padding: 4px 8px;
+		text-align: right;
+		cursor: pointer;
+	}
+	.date_picker_control .calendar .days .dn {
+		cursor: default;
+	}
+	.date_picker_control .calendar .control_button_inc:before,
+	.date_picker_control .calendar .control_button_dec:before {
+		content: '';
+	}
+	.date_picker_control .calendar .days .invalid {
+		background: #ccc;
+		opacity: 0.45;
+		cursor: default;
+	}
+	.date_picker_control .calendar .control_button_now {
+		display: block;
+		clear: both;
+		margin: 4px 0 0;
+	}
+	.date_picker_control .calendar .year .title {
+		margin-right: 4px;
+	}
+	.date_picker_control .calendar .month .title {
+		margin-right: 4px;
+		min-width: 5em;
+		display: inline-block;
+		text-align: center;
+	}
+	.date_picker_control .calendar .time {
+		white-space: nowrap;
+	}
+	.date_picker_control .calendar .hour:after {
+		content: ': ';
+	}
+	.datemonth_picker .year .title,
+	.datemonth_picker .month .title {
+		cursor: pointer;
+	}
+	.datemonth_picker .year .title.invalid,
+	.datemonth_picker .month .title.invalid {
+		opacity: 0.45;
+		cursor: default;
+	}
+

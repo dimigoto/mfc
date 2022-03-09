@@ -1,0 +1,43 @@
+{
+    "id": "student-document-submission",
+    "guidRequestType": "e24daa20-37a0-11ec-a203-00155d203652",
+    "structure": [
+        {
+            "class": "include",
+            "src": "_application_download_fields"
+        },
+        {
+            "class": "field",
+            "type": "select",
+            "name": "documentProvided",
+            "format": "string",
+            "read": "items",
+            "label": "DOCUMENT_PROVIDED",
+            "items": [
+                "COVID19_CERTIFICATE",
+                "COVID19_SICKNESS",
+                "COVID19_WITHDRAWAL"
+            ],
+            "required": true,
+            "maxWidth": [
+                {
+                    "point": "lg",
+                    "size": 4
+                },
+                {
+                    "point": "md",
+                    "size": 6
+                }
+            ]
+        },
+        {
+            "class": "file",
+            "type": "file",
+            "name": "file",
+            "format": "file",
+            "read": "file",
+            "label": "DOCUMENT_FILE",
+            "required": true
+        }
+    ]
+}

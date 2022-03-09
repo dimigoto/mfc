@@ -1,0 +1,77 @@
+{
+    "id": "student-characteristic",
+    "guidRequestType": "82860cc5-c660-11ea-a48b-00155d203945",
+    "structure": [
+        {
+            "class": "include",
+            "src": "_application_download_fields"
+        },
+        {
+            "class": "field",
+            "type": "radio",
+            "name": "characteristicType",
+            "format": "string",
+            "read": "items",
+            "label": "STUDENT_CHARACTERISTIC_TYPE",
+            "items": [
+                "STANDARD",
+                "CUSTOM",
+                "READY"
+            ],
+            "required": true
+        },
+        {
+            "class": "fieldset",
+            "name": "characteristicTypeCustom",
+            "enabledRules": {
+                "from": "characteristicType",
+                "value": "CUSTOM"
+            },
+            "children": [
+                {
+                    "class": "file",
+                    "type": "file",
+                    "name": "characteristicCustomFile",
+                    "format": "file",
+                    "read": "file",
+                    "label": "STUDENT_CHARACTERISTIC_CUSTOM_FILE",
+                    "required": true,
+                    "extensions": [
+                        "doc",
+                        "docx",
+                        "rtf",
+                        "pdf"
+                    ]
+                }
+            ]
+        },
+        {
+            "class": "fieldset",
+            "name": "characteristicTypeReady",
+            "enabledRules": {
+                "from": "characteristicType",
+                "value": "READY"
+            },
+            "children": [
+                {
+                    "class": "file",
+                    "type": "file",
+                    "name": "characteristicReadyFile",
+                    "format": "file",
+                    "read": "file",
+                    "label": "STUDENT_CHARACTERISTIC_READY_FILE",
+                    "required": true,
+                    "extensions": [
+                        "doc",
+                        "docx",
+                        "rtf"
+                    ]
+                }
+            ]
+        },
+        {
+            "class": "include",
+            "src": "_obtaining"
+        }
+    ]
+}

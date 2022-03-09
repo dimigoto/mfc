@@ -1,0 +1,61 @@
+{
+  "id": "student-enquiries-commissions-one-day",
+  "guidRequestType": "c6e3c39a-72fb-11ea-97fc-00155d203945",
+  "files": [
+    {
+      "guid": "1229b4c3-6109-46e1-b91f-739d1b7fbec1",
+      "label": "BLANK_DEFAULT",
+      "file": "zayavlenie-o-sozdanii-dopolnitelnoj-predmetnoj-komissii.pdf"
+    }
+  ],
+  "structure": [
+    {
+      "class": "include",
+      "src": "_full_name"
+    },
+    {
+      "class": "include",
+      "src": "_education_info"
+    },
+    {
+      "class": "include",
+      "src": "_phone"
+    },
+    {
+      "class": "field",
+      "type": "radio",
+      "name": "enquiryType",
+      "format": "string",
+      "read": "items",
+      "label": "ENQUIRY_TYPE",
+      "items": [
+        "PROPOSAL",
+        "COMPLAINT"
+      ],
+      "required": true
+    },
+    {
+      "class": "file",
+      "type": "file",
+      "name": "file",
+      "format": "file",
+      "read": "file",
+      "label": "FILE",
+      "multiple": true,
+      "required": false
+    },
+    {
+      "class": "field",
+      "type": "textarea",
+      "name": "message",
+      "format": "string",
+      "read": "string",
+      "label": "MESSAGE",
+      "required": true
+    },
+    {
+      "class": "include",
+      "src": "_obtaining"
+    }
+  ]
+}

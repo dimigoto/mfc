@@ -1,0 +1,25 @@
+{
+    "id": "student-change-educational-program",
+    "guidRequestType": "2aa001df-c660-11ea-a48b-00155d203945",
+    "files": [
+        {
+            "guid": "af7d7fa6-8ed9-4371-93a6-93dd1ec28e9e",
+            "label": "BLANK_DEFAULT",
+            "file": "zayavlenie-perevod-na-druguyu-obrazovatelnuyu-programmu-20220117.pdf"
+        }
+    ],
+    "structure": [
+        {
+            "class": "include",
+            "src": "_application_download_fields"
+        },
+        {
+            "class": "include",
+            "src": "_application_download_file"
+        },
+        {
+            "class": "include",
+            "src": "_application_download_file_multiple"
+        }
+    ]
+}

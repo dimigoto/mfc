@@ -1,0 +1,25 @@
+{
+    "id": "student-academic-leave",
+    "guidRequestType": "78bc5689-7cab-11eb-a200-00155d203652",
+    "files": [
+        {
+            "guid": "9883a92f-b225-4a4a-9a4b-3618301b7680",
+            "label": "BLANK_DEFAULT",
+            "file": "zayavlenie-otpusk-akademicheskiy-vyhod-20220117.pdf"
+        }
+    ],
+    "structure": [
+        {
+            "class": "include",
+            "src": "_application_download_fields"
+        },
+        {
+            "class": "include",
+            "src": "_application_download_file"
+        },
+        {
+            "class": "include",
+            "src": "_application_download_file_multiple"
+        }
+    ]
+}

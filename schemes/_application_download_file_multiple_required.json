@@ -1,0 +1,10 @@
+{
+    "class": "file",
+    "type": "file",
+    "name": "filesDocuments",
+    "format": "file",
+    "read": "file",
+    "label": "APPLICATION_ADDITIONAL_FILES",
+    "multiple": true,
+    "required": true
+}

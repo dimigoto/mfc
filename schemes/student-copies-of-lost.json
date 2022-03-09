@@ -1,0 +1,25 @@
+{
+    "id": "student-copies-of-lost",
+    "guidRequestType": "e0842848-c65e-11ea-a48b-00155d203945",
+    "files": [
+        {
+            "guid": "33ad5d51-3808-4228-a1cb-e6f8203e6642",
+            "label": "BLANK_DEFAULT",
+            "file": "zayavlenie-vydacha-dublikata-20211206.pdf"
+        }
+    ],
+    "structure": [
+        {
+            "class": "include",
+            "src": "_application_download_fields"
+        },
+        {
+            "class": "include",
+            "src": "_application_download_file"
+        },
+        {
+            "class": "include",
+            "src": "_application_download_file_multiple_required"
+        }
+    ]
+}

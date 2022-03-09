@@ -1,0 +1,278 @@
+{
+    "id": "temp-pass-issue",
+    "guidRequestType": "71f31e18-db85-11ea-a48b-00155d203945",
+    "rateLimit" : 0,
+    "structure": [
+        {
+            "class": "field",
+            "type": "fullName",
+            "name": "fullName",
+            "format": "string",
+            "read": "string",
+            "label": "TEMP_PASS_ISSUER_FULL_NAME",
+            "readonly": true,
+            "required": true
+        },
+        {
+            "class": "field",
+            "type": "employeePost",
+            "name": "employeePost",
+            "format": "string",
+            "read": "string",
+            "label": "EMPLOYEE_POST",
+            "required": true
+        },
+        {
+            "class": "field",
+            "type": "phone",
+            "name": "phone",
+            "format": "string",
+            "read": "string",
+            "label": "TEMP_PASS_ISSUE_PHONE",
+            "readonly": false,
+            "required": true
+        },
+        {
+            "class": "heading",
+            "type": "h2",
+            "text": "TEMP_PASS_ISSUE_INFO_HEADING"
+        },
+        {
+            "class": "field",
+            "type": "text",
+            "name": "purpose",
+            "format": "string",
+            "read": "string",
+            "label": "TEMP_PASS_ISSUE_PURPOSE",
+            "hint": "TEMP_PASS_ISSUE_PURPOSE_HINT",
+            "readonly": false,
+            "required": true
+        },
+        {
+            "class": "fieldset",
+            "name": "visitTime",
+            "children": [
+                {
+                    "class": "field",
+                    "type": "datetime",
+                    "name": "visitTimeFrom",
+                    "format": "datetime",
+                    "read": "datetime",
+                    "label": "TEMP_PASS_ISSUE_DATE_TIME_START",
+                    "value": "09:00",
+                    "required": true,
+                    "maxWidth": [
+                        {
+                            "point": "lg",
+                            "size": 3
+                        },
+                        {
+                            "point": "md",
+                            "size": 4
+                        },
+                        {
+                            "point": "sm",
+                            "size": 6
+                        },
+                        {
+                            "point": "xs",
+                            "size": 6
+                        }
+                    ]
+                },
+                {
+                    "class": "field",
+                    "type": "datetime",
+                    "name": "visitTimeTo",
+                    "format": "datetime",
+                    "read": "datetime",
+                    "label": "TEMP_PASS_ISSUE_DATE_TIME_END",
+                    "value": "09:00",
+                    "required": true,
+                    "maxWidth": [
+                        {
+                            "point": "lg",
+                            "size": 3
+                        },
+                        {
+                            "point": "md",
+                            "size": 4
+                        },
+                        {
+                            "point": "sm",
+                            "size": 6
+                        },
+                        {
+                            "point": "xs",
+                            "size": 6
+                        }
+                    ]
+                }
+            ],
+            "label": "TEMP_PASS_ISSUE_DATE_TIME"
+        },
+        {
+            "class": "fieldset",
+            "name": "persons",
+            "children": [
+                {
+                    "class": "field",
+                    "type": "text",
+                    "name": "fullNamePerson",
+                    "format": "string",
+                    "read": "string",
+                    "label": "TEMP_PASS_ISSUE_FULL_NAME",
+                    "ghost": true
+                },
+                {
+                    "class": "field",
+                    "type": "text",
+                    "name": "personLastName",
+                    "format": "string",
+                    "read": "string",
+                    "label": "TEMP_PASS_ISSUE_LAST_NAME",
+                    "required": true
+                },
+                {
+                    "class": "field",
+                    "type": "text",
+                    "name": "personFirstName",
+                    "format": "string",
+                    "read": "string",
+                    "label": "TEMP_PASS_ISSUE_FIRST_NAME",
+                    "required": true
+                },
+                {
+                    "class": "field",
+                    "type": "text",
+                    "name": "personMiddleName",
+                    "format": "string",
+                    "read": "string",
+                    "label": "TEMP_PASS_ISSUE_MIDDLE_NAME"
+                },
+                {
+                    "class": "field",
+                    "type": "text",
+                    "name": "reason",
+                    "format": "string",
+                    "read": "string",
+                    "label": "TEMP_PASS_ISSUE_REASON",
+                    "required": true
+                },
+                {
+                    "class": "field",
+                    "type": "buildings",
+                    "name": "objects",
+                    "format": "multiselect",
+                    "read": "string",
+                    "label": "TEMP_PASS_ISSUE_OBJECTS",
+                    "required": true
+                },
+                {
+                    "class": "field",
+                    "type": "text",
+                    "name": "phonePerson",
+                    "format": "string",
+                    "read": "string",
+                    "label": "TEMP_PASS_ISSUE_PERSON_PHONE",
+                    "required": true
+                },
+                {
+                    "class": "field",
+                    "type": "text",
+                    "name": "notes",
+                    "format": "string",
+                    "read": "string",
+                    "label": "TEMP_PASS_ISSUE_NOTES",
+                    "required": false
+                },
+                {
+                    "class": "field",
+                    "type": "radio",
+                    "name": "vehicle",
+                    "format": "string",
+                    "read": "items",
+                    "label": "TEMP_PASS_ISSUE_VEHICLE",
+                    "items": [
+                        "NO",
+                        "YES"
+                    ],
+                    "selection": "NO",
+                    "required": true
+                },
+                {
+                    "class": "fieldset",
+                    "name": "vehicleFieldset",
+                    "enabledRules": {
+                        "from": "vehicle",
+                        "value": "YES"
+                    },
+                    "children": [
+                        {
+                            "class": "field",
+                            "type": "text",
+                            "name": "vehicleDriverFullName",
+                            "format": "string",
+                            "read": "string",
+                            "label": "TEMP_PASS_ISSUE_VEHICLE_DRIVER_FULL_NAME",
+                            "required": true
+                        },
+                        {
+                            "class": "field",
+                            "type": "text",
+                            "name": "vehicleModel",
+                            "format": "string",
+                            "read": "string",
+                            "label": "TEMP_PASS_ISSUE_VEHICLE_MODEL",
+                            "required": true
+                        },
+                        {
+                            "class": "field",
+                            "type": "text",
+                            "name": "vehicleNumber",
+                            "format": "string",
+                            "read": "string",
+                            "label": "TEMP_PASS_ISSUE_VEHICLE_NUMBER",
+                            "required": true
+                        },
+                        {
+                            "class": "field",
+                            "type": "radio",
+                            "name": "vehicleParking",
+                            "format": "string",
+                            "read": "items",
+                            "label": "TEMP_PASS_ISSUE_VEHICLE_PARKING",
+                            "items": [
+                                "NO",
+                                "GR1",
+                                "GR2",
+                                "GR3",
+                                "CENTRAL"
+                            ],
+                            "required": true
+                        },
+                        {
+                            "class": "field",
+                            "type": "buildings",
+                            "name": "vehicleObjects",
+                            "format": "multiselect",
+                            "read": "string",
+                            "label": "TEMP_PASS_ISSUE_VEHICLE_OBJECTS"
+                        }
+                    ]
+                }
+            ],
+            "label": "TEMP_PASS_ISSUE_PERSONS",
+            "multiple": true
+        },
+        {
+            "class": "file",
+            "type": "file",
+            "name": "file",
+            "format": "file",
+            "read": "file",
+            "label": "TEMP_PASS_ISSUE_FILE",
+            "multiple": true
+        }
+    ]
+}

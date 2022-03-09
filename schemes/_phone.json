@@ -1,0 +1,20 @@
+{
+    "class": "field",
+    "type": "phone",
+    "name": "phone",
+    "format": "string",
+    "read": "string",
+    "label": "PHONE",
+    "readonly": false,
+    "required": true,
+    "maxWidth": [
+        {
+            "point": "lg",
+            "size": 6
+        },
+        {
+            "point": "md",
+            "size": 8
+        }
+    ]
+}

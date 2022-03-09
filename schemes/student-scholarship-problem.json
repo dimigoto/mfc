@@ -1,0 +1,52 @@
+{
+    "deprecated": true,
+    "id": "student-scholarship-problem",
+    "guidRequestType": "d0d84f07-06bd-11eb-a48b-00155d203945",
+    "structure": [
+        {
+            "class": "include",
+            "src": "_full_name"
+        },
+        {
+            "class": "include",
+            "src": "_birthday"
+        },
+        {
+            "class": "include",
+            "src": "_passport"
+        },
+        {
+            "class": "include",
+            "src": "_education_info"
+        },
+        {
+            "class": "field",
+            "type": "radio",
+            "name": "scholarshipType",
+            "format": "string",
+            "read": "items",
+            "label": "SCHOLARSHIP_TYPE",
+            "items": [
+                "SOCIAL",
+                "ACADEMIC",
+                "ONETIME",
+                "FULL",
+                "NAME"
+            ],
+            "required": true
+        },
+        {
+            "class": "include",
+            "src": "_phone"
+        },
+        {
+            "class": "field",
+            "type": "textarea",
+            "name": "message",
+            "format": "string",
+            "read": "string",
+            "label": "MESSAGE",
+            "required": true
+        }
+    ]
+}

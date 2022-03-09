@@ -1,0 +1,9 @@
+{
+    "class": "field",
+    "type": "textarea",
+    "name": "comment",
+    "format": "string",
+    "read": "string",
+    "label": "COMMENT",
+    "required": false
+}

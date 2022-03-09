@@ -1,0 +1,10 @@
+{
+    "class": "field",
+    "type": "fullName",
+    "name": "fullName",
+    "format": "string",
+    "read": "string",
+    "label": "FULL_NAME",
+    "readonly": true,
+    "required": true
+}

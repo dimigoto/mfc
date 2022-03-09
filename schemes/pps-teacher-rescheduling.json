@@ -1,0 +1,39 @@
+{
+    "id": "pps-teacher-rescheduling",
+    "guidRequestType": "54afd015-5619-11eb-a200-00155d203652",
+    "files": [
+        {
+            "guid": "304fe0b2-0c0f-4c2b-95c3-d7a969fceadb",
+            "label": "BLANK_DEFAULT",
+            "file": "raspisanie-kartochka-zameny-perenosa-zanyatiy-20211110.docx"
+        }
+    ],
+    "rateLimit" : 0,
+    "structure": [
+        {
+            "class": "include",
+            "src": "_full_name"
+        },
+        {
+            "class": "include",
+            "src": "_employee_department"
+        },
+        {
+            "class": "include",
+            "src": "_phone"
+        },
+        {
+            "class": "file",
+            "type": "file",
+            "name": "file",
+            "format": "file",
+            "read": "file",
+            "label": "APPLICATION_FILE",
+            "required": true
+        },
+        {
+            "class": "include",
+            "src": "_comment"
+        }
+    ]
+}

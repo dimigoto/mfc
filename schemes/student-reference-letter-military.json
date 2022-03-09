@@ -1,0 +1,30 @@
+{
+    "id": "student-reference-letter-military",
+    "guidRequestType": "0dc108f0-dca7-11ea-a48b-00155d203945",
+    "structure": [
+        {
+            "class": "include",
+            "src": "_full_name"
+        },
+        {
+            "class": "include",
+            "src": "_education_info"
+        },
+        {
+            "class": "include",
+            "src": "_student-reference-letter_count"
+        },
+        {
+            "class": "include",
+            "src": "_phone_not_required"
+        },
+        {
+            "class": "include",
+            "src": "_obtaining"
+        },
+        {
+            "class": "include",
+            "src": "_comment"
+        }
+    ]
+}

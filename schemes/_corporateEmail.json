@@ -1,0 +1,20 @@
+{
+    "class": "field",
+    "type": "corporateEmail",
+    "name": "corporateEmail",
+    "format": "string",
+    "read": "string",
+    "label": "CORPORATE_EMAIL",
+    "readonly": true,
+    "required": true,
+    "maxWidth": [
+        {
+            "point": "lg",
+            "size": 6
+        },
+        {
+            "point": "md",
+            "size": 8
+        }
+    ]
+}

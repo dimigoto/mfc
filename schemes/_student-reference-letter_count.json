@@ -1,0 +1,27 @@
+{
+    "class": "field",
+    "type": "count",
+    "name": "count",
+    "format": "string",
+    "read": "string",
+    "label": "REFERENCE_LETTER_COUNT",
+    "required": true,
+    "maxWidth": [
+        {
+            "point": "lg",
+            "size": 2
+        },
+        {
+            "point": "md",
+            "size": 3
+        },
+        {
+            "point": "sm",
+            "size": 4
+        },
+        {
+            "point": "xs",
+            "size": 6
+        }
+    ]
+}

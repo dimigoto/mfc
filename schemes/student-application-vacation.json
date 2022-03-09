@@ -1,0 +1,26 @@
+{
+    "id": "student-application-vacation",
+    "guidRequestType": "8a68a832-5eda-11ec-a204-00155d203652",
+    "files": [
+        {
+            "guid": "8f0d6cab-545a-44ba-9450-847388a69389",
+            "label": "BLANK_STUDENT_APPLICATION_VACATION",
+            "file": "zayavlenie-predostavlenie-kanikul-20211221.pdf"
+        },
+        {
+            "guid": "ecf5f7a6-2709-4e1e-829b-d99dae811e3f",
+            "label": "BLANK_STUDENT_APPLICATION_VACATION_REJECTION",
+            "file": "zayavlenie-otkaz-ot-kanikul-20211221.pdf"
+        }
+    ],
+    "structure": [
+        {
+            "class": "include",
+            "src": "_application_download_fields"
+        },
+        {
+            "class": "include",
+            "src": "_application_download_file"
+        }
+    ]
+}

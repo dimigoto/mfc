@@ -1,0 +1,20 @@
+{
+    "class": "field",
+    "type": "accommodation",
+    "name": "accommodation",
+    "format": "string",
+    "read": "string",
+    "label": "ACCOMMODATION",
+    "readonly": true,
+    "required": false,
+    "maxWidth": [
+        {
+            "point": "lg",
+            "size": 6
+        },
+        {
+            "point": "md",
+            "size": 8
+        }
+    ]
+}

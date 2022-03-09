@@ -1,0 +1,25 @@
+{
+    "id": "student-child-care-leave",
+    "guidRequestType": "95feb284-c65f-11ea-a48b-00155d203945",
+    "files": [
+        {
+            "guid": "e8210264-5caa-458d-8429-31d323d83ee1",
+            "label": "BLANK_DEFAULT",
+            "file": "zayavlenie-otpusk-po-uhodu-za-rebenkom-20211206.pdf"
+        }
+    ],
+    "structure": [
+        {
+            "class": "include",
+            "src": "_application_download_fields"
+        },
+        {
+            "class": "include",
+            "src": "_application_download_file"
+        },
+        {
+            "class": "include",
+            "src": "_application_download_file_multiple_required"
+        }
+    ]
+}

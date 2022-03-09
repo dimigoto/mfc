@@ -1,0 +1,56 @@
+{
+    "id": "employee-document-copy",
+    "guidRequestType": "4f0dce58-3abd-11eb-a200-00155d203652",
+    "rateLimit" : 0,
+    "structure": [
+        {
+            "class": "include",
+            "src": "_full_name"
+        },
+        {
+            "class": "include",
+            "src": "_employee_department"
+        },
+        {
+            "class": "include",
+            "src": "_corporateEmail"
+        },
+        {
+            "class": "include",
+            "src": "_phone"
+        },
+        {
+            "class": "field",
+            "type": "checkbox",
+            "name": "documentCategory",
+            "format": "string",
+            "read": "items",
+            "label": "EMPLOYEE_DOCUMENT_COPY_CATEGORY",
+            "items": [
+                "ADMISSION",
+                "TRANSFER",
+                "CONTRACT",
+                "EMPLOYMENT_BOOK"
+            ],
+            "required": true,
+            "maxWidth": [
+                {
+                    "point": "lg",
+                    "size": 6
+                },
+                {
+                    "point": "md",
+                    "size": 8
+                }
+            ]
+        },
+        {
+            "class": "include",
+            "src": "_comment"
+        },
+        {
+            "class": "include",
+            "src": "_obtaining"
+        }
+    ]
+}

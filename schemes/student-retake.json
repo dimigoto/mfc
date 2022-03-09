@@ -1,0 +1,25 @@
+{
+    "id": "student-retake",
+    "guidRequestType": "72bf408b-c660-11ea-a48b-00155d203945",
+    "files": [
+        {
+            "guid": "a59caa21-7b76-410c-8a08-8074e2643daa",
+            "label": "BLANK_DEFAULT",
+            "file": "zayavlenie-perezachet-disciplin-20211021.pdf"
+        }
+    ],
+    "structure": [
+        {
+            "class": "include",
+            "src": "_application_download_fields"
+        },
+        {
+            "class": "include",
+            "src": "_application_download_file"
+        },
+        {
+            "class": "include",
+            "src": "_application_download_file_multiple"
+        }
+    ]
+}

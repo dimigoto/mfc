@@ -1,0 +1,21 @@
+{
+    "id": "student-distribution-by-modules-and-electives",
+    "guidRequestType": "7e0a9dd2-c65f-11ea-a48b-00155d203945",
+    "files": [
+        {
+            "guid": "05957fb5-ba9b-4420-a302-29c59a98d338",
+            "label": "BLANK_DEFAULT",
+            "file": "zayavlenie.pdf"
+        }
+    ],
+    "structure": [
+        {
+            "class": "include",
+            "src": "_application_download_fields"
+        },
+        {
+            "class": "include",
+            "src": "_application_download_file_multiple"
+        }
+    ]
+}

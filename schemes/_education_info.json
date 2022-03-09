@@ -1,0 +1,127 @@
+{
+    "class": "fieldset",
+    "name": "educationInfo",
+    "type": "educationInfo",
+    "skip": true,
+    "children": [
+        {
+            "class": "field",
+            "type": "select",
+            "name": "educationProgram",
+            "format": "string",
+            "read": "string",
+            "label": "EDUCATION_PROGRAM",
+            "required": true
+        },
+        {
+            "class": "field",
+            "type": "text",
+            "name": "course",
+            "format": "string",
+            "read": "string",
+            "label": "COURSE",
+            "maxWidth": [
+                {
+                    "point": "lg",
+                    "size": 2
+                },
+                {
+                    "point": "md",
+                    "size": 3
+                },
+                {
+                    "point": "sm",
+                    "size": 4
+                },
+                {
+                    "point": "xs",
+                    "size": 6
+                }
+            ]
+        },
+        {
+            "class": "field",
+            "type": "text",
+            "name": "academicGroup",
+            "format": "string",
+            "read": "string",
+            "label": "ACADEMIC_GROUP",
+            "maxWidth": [
+                {
+                    "point": "lg",
+                    "size": 4
+                },
+                {
+                    "point": "md",
+                    "size": 6
+                },
+                {
+                    "point": "sm",
+                    "size": 6
+                }
+            ]
+        },
+        {
+            "class": "field",
+            "type": "text",
+            "name": "educationForm",
+            "format": "string",
+            "read": "string",
+            "label": "EDUCATION_FORM",
+            "maxWidth": [
+                {
+                    "point": "lg",
+                    "size": 4
+                },
+                {
+                    "point": "md",
+                    "size": 6
+                },
+                {
+                    "point": "sm",
+                    "size": 6
+                }
+            ]
+        },
+        {
+            "class": "field",
+            "type": "text",
+            "name": "compensationType",
+            "format": "string",
+            "read": "string",
+            "label": "COMPENSATION_TYPE",
+            "maxWidth": [
+                {
+                    "point": "lg",
+                    "size": 4
+                },
+                {
+                    "point": "md",
+                    "size": 6
+                },
+                {
+                    "point": "sm",
+                    "size": 6
+                }
+            ]
+        },
+        {
+            "class": "field",
+            "type": "hidden",
+            "name": "studentDepartment",
+            "format": "string",
+            "read": "none",
+            "isHidden": true,
+            "required": true
+        },
+        {
+            "class": "field",
+            "type": "hidden",
+            "name": "studentDepartmentGuid",
+            "format": "string",
+            "read": "none",
+            "isHidden": true,
+            "required": true
+        }
+    ]
+}

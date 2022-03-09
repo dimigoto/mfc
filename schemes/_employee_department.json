@@ -1,0 +1,34 @@
+{
+    "class": "fieldset",
+    "name": "employeeDepartmentInfo",
+    "type": "employeeDepartmentInfo",
+    "children": [
+        {
+            "class": "field",
+            "type": "select",
+            "name": "employeeDepartment",
+            "format": "string",
+            "read": "string",
+            "label": "EMPLOYEE_DEPARTMENT",
+            "required": true
+        },
+        {
+            "class": "field",
+            "type": "hidden",
+            "name": "employeeDepartmentGuid",
+            "format": "string",
+            "read": "none",
+            "isHidden": true,
+            "required": true
+        },
+        {
+            "class": "field",
+            "type": "hidden",
+            "name": "employeePost",
+            "format": "string",
+            "read": "none",
+            "isHidden": true,
+            "required": true
+        }
+    ]
+}

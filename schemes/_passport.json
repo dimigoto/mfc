@@ -1,0 +1,10 @@
+{
+    "class": "field",
+    "type": "passport",
+    "name": "passport",
+    "format": "string",
+    "read": "string",
+    "label": "PASSPORT",
+    "readonly": true,
+    "required": true
+}

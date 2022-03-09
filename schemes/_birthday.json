@@ -1,0 +1,28 @@
+{
+    "class": "field",
+    "type": "birthday",
+    "name": "birthday",
+    "format": "date",
+    "read": "date",
+    "label": "BIRTHDAY",
+    "readonly": true,
+    "required": true,
+    "maxWidth": [
+        {
+            "point": "lg",
+            "size": 2
+        },
+        {
+            "point": "md",
+            "size": 3
+        },
+        {
+            "point": "sm",
+            "size": 4
+        },
+        {
+            "point": "xs",
+            "size": 6
+        }
+    ]
+}

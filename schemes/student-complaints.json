@@ -1,0 +1,47 @@
+{
+    "id": "student-complaints",
+    "guidRequestType": "c6e3c39a-72fb-11ea-97fc-00155d203945",
+    "structure": [
+        {
+            "class": "include",
+            "src": "_full_name"
+        },
+        {
+            "class": "include",
+            "src": "_education_info"
+        },
+        {
+            "class": "field",
+            "type": "select",
+            "name": "category",
+            "format": "string",
+            "read": "items",
+            "label": "COMPLAINTS_CATEGORY",
+            "items": [
+                "EDUCATION_PROGRAM_ADMIN",
+                "SCHEDULE",
+                "ONLINE"
+            ],
+            "required": true,
+            "maxWidth": [
+                {
+                    "point": "lg",
+                    "size": 6
+                },
+                {
+                    "point": "md",
+                    "size": 8
+                }
+            ]
+        },
+        {
+            "class": "field",
+            "type": "textarea",
+            "name": "message",
+            "format": "string",
+            "read": "string",
+            "label": "MESSAGE",
+            "required": true
+        }
+    ]
+}

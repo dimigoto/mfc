@@ -1,0 +1,89 @@
+{
+    "id": "student-reference-letter-status",
+    "guidRequestType": "c902e8b3-806c-11ea-97fc-00155d203945",
+    "structure": [
+        {
+            "class": "include",
+            "src": "_full_name"
+        },
+        {
+            "class": "include",
+            "src": "_education_info"
+        },
+        {
+            "class": "include",
+            "src": "_student-reference-letter_count"
+        },
+        {
+            "class": "field",
+            "type": "radio",
+            "name": "period",
+            "format": "string",
+            "read": "items",
+            "label": "REFERENCE_LETTER_STATUS_PERIOD",
+            "items": [
+                "NO",
+                "YES"
+            ],
+            "required": false,
+            "ghost": true
+        },
+        {
+            "class": "field",
+            "type": "radio",
+            "name": "averageGrade",
+            "format": "string",
+            "read": "items",
+            "label": "REFERENCE_LETTER_STATUS_AVERAGE_GRADE",
+            "items": [
+                "NO",
+                "YES"
+            ],
+            "required": false,
+            "ghost": true
+        },
+        {
+            "class": "fieldset",
+            "name": "averageGradePeriodFieldset",
+            "enabledRules": {
+                "from": "averageGrade",
+                "value": "YES"
+            },
+            "children": [
+                {
+                    "class": "field",
+                    "type": "radio",
+                    "name": "averageGradePeriod",
+                    "format": "string",
+                    "read": "items",
+                    "label": "REFERENCE_LETTER_STATUS_AVERAGE_GRADE_PERIOD",
+                    "items": [
+                        "SEMESTER",
+                        "YEAR",
+                        "ALL"
+                    ],
+                    "required": true
+                }
+            ],
+            "ghost": true
+        },
+        {
+            "class": "include",
+            "src": "_phone_not_required"
+        },
+        {
+            "class": "include",
+            "src": "_obtaining"
+        },
+        {
+            "class": "field",
+            "type": "textarea",
+            "name": "comment",
+            "format": "string",
+            "read": "string",
+            "label": "COMMENT",
+            "required": false,
+            "hint": "STUDENT_REFERENCE_LETTER_STATUS_COMMENT_HINT"
+        }
+    ]
+}

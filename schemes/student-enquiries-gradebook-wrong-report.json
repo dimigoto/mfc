@@ -1,0 +1,47 @@
+{
+    "id": "student-enquiries-gradebook-wrong-report",
+    "guidRequestType": "c6e3c39a-72fb-11ea-97fc-00155d203945",
+    "files": [
+        {
+            "guid": "cf3186f5-2cc9-4e1d-915c-dbd173c404ba",
+            "label": "BLANK_DEFAULT",
+            "file": "forma-obrashcheniya-studenta-ob-izmenenii-ocenok.pdf"
+        }
+    ],
+    "structure": [
+        {
+            "class": "include",
+            "src": "_full_name"
+        },
+        {
+            "class": "include",
+            "src": "_education_info"
+        },
+        {
+            "class": "include",
+            "src": "_phone"
+        },
+        {
+            "class": "file",
+            "type": "file",
+            "name": "file",
+            "format": "file",
+            "read": "file",
+            "label": "FILE",
+            "required": false
+        },
+        {
+            "class": "field",
+            "type": "textarea",
+            "name": "message",
+            "format": "string",
+            "read": "string",
+            "label": "MESSAGE",
+            "required": true
+        },
+        {
+            "class": "include",
+            "src": "_obtaining"
+        }
+    ]
+}

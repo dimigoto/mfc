@@ -1,0 +1,74 @@
+.mfcEnquiryForm__container {
+  margin-bottom: 20px;
+}
+
+.mfcEnquiryForm {
+  .repeated {
+    margin-bottom: 18px;
+  }
+
+  .form-group {
+    margin-bottom: 0;
+  }
+
+  .fields.disabled,
+  .field.disabled {
+    display: none;
+  }
+
+  .field.required label {
+    font-weight: normal;
+  }
+  .field.invalid > label,
+  .field.required > label {
+    font-weight: bold;
+
+    &:after {
+      content: '*';
+    }
+  }
+
+  .field__hint {
+    font-style: italic;
+  }
+
+  .readonly {
+    opacity: 0.6 !important;
+  }
+
+  .date_picker_control {
+    display: block;
+  }
+
+  .repeat_append_button.disabled,
+  .repeat_remove_button.disabled {
+    display: none;
+  }
+}
+.multiselect-container {
+  border: 1px solid rgba(0,0,0,.15);
+  box-shadow: 0 6px 12px rgba(0,0,0,.175);
+}
+.multiselect-native-select {
+  .dropdown-menu {
+    padding: 0;
+
+    label {
+      max-width: 100%;
+      padding-left: 20px;
+      white-space: nowrap;
+    }
+
+    a, .checkbox {
+      display: block;
+    }
+    a {
+      border: none;
+    }
+  }
+}
+
+.mfc-classifier__hint {
+  font-size: .8rem;
+  color: #000 !important;
+}

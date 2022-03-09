@@ -1,0 +1,67 @@
+{
+  "id": "student-enquiries-commissions-dispute",
+  "guidRequestType": "c6e3c39a-72fb-11ea-97fc-00155d203945",
+  "files": [
+    {
+      "guid": "3e87a068-9c55-4031-ba5e-c8e7785df393",
+      "label": "BLANK_DEFAULT",
+      "file": "zayavleniya-o-rassmotrenii-spornoj-situacii.pdf"
+    }
+  ],
+  "structure": [
+    {
+      "class": "include",
+      "src": "_full_name"
+    },
+    {
+      "class": "include",
+      "src": "_education_info"
+    },
+    {
+      "class": "include",
+      "src": "_phone"
+    },
+    {
+      "class": "field",
+      "type": "radio",
+      "name": "enquiryType",
+      "format": "string",
+      "read": "items",
+      "label": "ENQUIRY_TYPE",
+      "items": [
+        "PROPOSAL",
+        "COMPLAINT"
+      ],
+      "required": true,
+      "ghost": true
+    },
+    {
+      "class": "file",
+      "type": "file",
+      "name": "file",
+      "format": "file",
+      "read": "file",
+      "label": "FILE_APPLICATION",
+      "required": true
+    },
+    {
+      "class": "file",
+      "type": "file",
+      "name": "fileSupportingDocuments",
+      "format": "file",
+      "read": "file",
+      "label": "FILE_SUPPORTING_DOCUMENTS",
+      "required": true
+    },
+    {
+      "class": "field",
+      "type": "textarea",
+      "name": "message",
+      "format": "string",
+      "read": "string",
+      "label": "MESSAGE",
+      "required": true,
+      "ghost": true
+    }
+  ]
+}

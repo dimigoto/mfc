@@ -1,0 +1,21 @@
+{
+    "id": "student-application-foreigner",
+    "guidRequestType": "7c1169a0-5eec-11ec-a204-00155d203652",
+    "files": [
+        {
+            "guid": "3196b8f1-62cd-4cb5-a581-95fadb91a35a",
+            "label": "BLANK_DEFAULT",
+            "file": "zayavlenie-russkaya-transkripciya-fio-20211217.pdf"
+        }
+    ],
+    "structure": [
+        {
+            "class": "include",
+            "src": "_application_download_fields"
+        },
+        {
+            "class": "include",
+            "src": "_application_download_file"
+        }
+    ]
+}

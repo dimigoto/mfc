@@ -1,0 +1,39 @@
+{
+    "id": "pps-department-rescheduling",
+    "guidRequestType": "f4ba894a-5619-11eb-a200-00155d203652",
+    "files": [
+        {
+            "guid": "6c9572b8-31b5-422e-aeec-549f01e2ab94",
+            "label": "BLANK_DEFAULT",
+            "file": "raspisanie-svedeniya-o-vnesenii-izmeneniy.docx"
+        }
+    ],
+    "rateLimit" : 0,
+    "structure": [
+        {
+            "class": "include",
+            "src": "_full_name"
+        },
+        {
+            "class": "include",
+            "src": "_employee_department"
+        },
+        {
+            "class": "include",
+            "src": "_phone"
+        },
+        {
+            "class": "file",
+            "type": "file",
+            "name": "file",
+            "format": "file",
+            "read": "file",
+            "label": "APPLICATION_FILE",
+            "required": true
+        },
+        {
+            "class": "include",
+            "src": "_comment"
+        }
+    ]
+}

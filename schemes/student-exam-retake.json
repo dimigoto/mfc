@@ -1,0 +1,21 @@
+{
+    "id": "student-exam-retake",
+    "guidRequestType": "60f57d41-c660-11ea-a48b-00155d203945",
+    "files": [
+        {
+            "guid": "e9823965-d93f-48ef-a644-600f44f300da",
+            "label": "BLANK_DEFAULT",
+            "file": "zayavlenie-peresdacha-disciplin-20211206.pdf"
+        }
+    ],
+    "structure": [
+        {
+            "class": "include",
+            "src": "_application_download_fields"
+        },
+        {
+            "class": "include",
+            "src": "_application_download_file"
+        }
+    ]
+}

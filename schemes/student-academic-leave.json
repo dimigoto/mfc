@@ -1,0 +1,25 @@
+{
+    "id": "student-academic-leave",
+    "guidRequestType": "1806ae14-c660-11ea-a48b-00155d203945",
+    "files": [
+        {
+            "guid": "23acc18f-8170-4a2d-bec3-d7ea74e40833",
+            "label": "BLANK_DEFAULT",
+            "file": "zayavlenie-otpusk-akademicheskiy-20211206.pdf"
+        }
+    ],
+    "structure": [
+        {
+            "class": "include",
+            "src": "_application_download_fields"
+        },
+        {
+            "class": "include",
+            "src": "_application_download_file"
+        },
+        {
+            "class": "include",
+            "src": "_application_download_file_multiple_required"
+        }
+    ]
+}

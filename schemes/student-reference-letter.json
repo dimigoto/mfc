@@ -1,0 +1,94 @@
+{
+    "id": "student-reference-letter",
+    "guidRequestType": "c902e8b3-806c-11ea-97fc-00155d203945",
+    "structure": [
+        {
+            "class": "include",
+            "src": "_full_name"
+        },
+        {
+            "class": "include",
+            "src": "_education_info"
+        },
+        {
+            "class": "fieldset",
+            "name": "enquiries",
+            "children": [
+                {
+                    "class": "field",
+                    "type": "select",
+                    "name": "enquiryType",
+                    "format": "string",
+                    "read": "items",
+                    "label": "REFERENCE_LETTER_TYPE",
+                    "items": [
+                        "PENSION_FUND_MILITARY",
+                        "STATUS_CONFIRMATION"
+                    ],
+                    "required": true,
+                    "maxWidth": [
+                        {
+                            "point": "lg",
+                            "size": 6
+                        },
+                        {
+                            "point": "md",
+                            "size": 8
+                        }
+                    ]
+                },
+                {
+                    "class": "field",
+                    "type": "count",
+                    "name": "count",
+                    "format": "string",
+                    "read": "string",
+                    "label": "REFERENCE_LETTER_COUNT",
+                    "required": true,
+                    "maxWidth": [
+                        {
+                            "point": "lg",
+                            "size": 2
+                        },
+                        {
+                            "point": "md",
+                            "size": 3
+                        },
+                        {
+                            "point": "sm",
+                            "size": 4
+                        },
+                        {
+                            "point": "xs",
+                            "size": 6
+                        }
+                    ]
+                }
+            ],
+            "title": "REFERENCE_LETTER_ENQUIRIES",
+            "multiple": true
+        },
+        {
+            "class": "field",
+            "type": "checkbox",
+            "name": "additionalInfo",
+            "format": "string",
+            "read": "items",
+            "label": "REFERENCE_LETTER_ADDITIONAL_INFO",
+            "items": [
+                "MIDTERM_ASSESSMENT",
+                "GRADUATION",
+                "AVERAGE_GRADE",
+                "VACATION_DATES",
+                "COMPENSATION_TYPE",
+                "LICENSE_NUMBER",
+                "LICENSE_COPY",
+                "STATE_ACCREDITATION_CERTIFICATE_COPY"
+            ]
+        },
+        {
+            "class": "include",
+            "src": "_obtaining"
+        }
+    ]
+}

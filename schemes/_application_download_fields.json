@@ -1,0 +1,30 @@
+[
+  {
+    "class": "include",
+    "src": "_full_name"
+  },
+  {
+    "class": "include",
+    "src": "_birthday"
+  },
+  {
+    "class": "include",
+    "src": "_passport"
+  },
+  {
+    "class": "include",
+    "src": "_education_info"
+  },
+  {
+    "class": "include",
+    "src": "_corporateEmail"
+  },
+  {
+    "class": "include",
+    "src": "_phone"
+  },
+  {
+    "class": "include",
+    "src": "_comment"
+  }
+]
